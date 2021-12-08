@@ -1,0 +1,249 @@
+/* ###### Accordion ###### */
+
+.accordion {
+  .card {
+    border-width: 0;
+
+    + .card {
+      margin-top: 1px;
+    }
+  }
+
+  .card-header {
+    padding: 0;
+    background-color: transparent;
+    font-weight: 500;
+
+    a {
+      display: block;
+      padding: 14px 20px;
+      position: relative;
+      font-weight: 500;
+      font-size: 14px;
+      background-color: #e1e1f9;
+
+      &.collapsed {
+        color: #3c4858;
+        background-color: #e1e1f9;
+        border-bottom-color: transparent;
+
+        &:hover, &:focus {
+          color: #8f9cc0;
+          background-color: $background;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding: 15px;
+    background-color: $white;
+    transition: none;
+    border: 1px solid #e8e8f7;
+    border-bottom: 0;
+  }
+}
+
+.accordion-indigo {
+  .card-header a {
+    &.collapsed {
+      color: $white-8;
+      font-weight: 500;
+      letter-spacing: -.1px;
+
+      &:hover, &:focus {
+        color: $white;
+      }
+    }
+  }
+}
+
+.accordion-blue {
+	.card-header a {
+	  color: $white-8;
+	  font-weight: 500;
+	  letter-spacing: -.1px;
+
+	  &:hover, &:focus {
+		color: $white;
+	  }
+	}
+}
+
+.accordion-dark {
+  .card {
+    border-color: #8f9cc0;
+  }
+
+  .card-header a {
+    color: #8f9cc0;
+
+    &:hover, &:focus {
+      color: #8f9cc0;
+    }
+
+    &.collapsed {
+      background-color: #8f9cc0;
+      color: $white-8;
+      font-weight: 500;
+      letter-spacing: -.1px;
+
+      &:hover, &:focus {
+        background-color: #141c2b;
+        color: $white;
+      }
+    }
+  }
+}
+
+.accordion-gray {
+  .card {
+    border-color: #a8afc7;
+  }
+
+  .card-header a {
+    color: #a8afc7;
+
+    &:hover, &:focus {
+      color: #a8afc7;
+    }
+
+    &.collapsed {
+      background-color: #a8afc7;
+      color: $white-8;
+      font-weight: 500;
+      letter-spacing: -.1px;
+
+      &:hover, &:focus {
+        background-color: #6a7a96;
+        color: $white;
+      }
+    }
+  }
+}
+
+.accordion > .card {
+  overflow: hidden;
+
+  &:not(:first-of-type) {
+    .card-header:first-child {
+      border-radius: 0;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: 0;
+      border-radius: 0;
+    }
+  }
+
+  &:first-of-type {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &:last-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .card-header {
+    margin-bottom: -1px;
+  }
+}
+
+.main-accordion {
+  .accordion-item {
+    background-color: #f1f2f9;
+    border: 1px solid #dee2ef;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+    &:hover, &:focus {
+      cursor: pointer;
+      background-color: #f1f2f6;
+      border-color: #bcc4de;
+      z-index: 4;
+    }
+
+    &.active {
+      background-color: $white;
+      z-index: 5;
+      border-color: #bcc4de;
+      
+      .accordion-body {
+        display: block;
+      }
+    }
+
+    + .accordion-item {
+      margin-top: -1px;
+    }
+  }
+
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .accordion-title {
+    font-weight: 700;
+    color: #8f9cc0;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .accordion-body {
+    display: none;
+    padding: 0 20px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .main-accordion .accordion-item {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .main-accordion .accordion-title {
+    transition: none;
+  }
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
+.accordion-color .card-header a {
+  &.collapsed {
+    color: $white-8;
+    font-weight: 500;
+    letter-spacing: -.1px;
+
+    &:hover, &:focus {
+      color: $white;
+    }
+  }
+}
+
+.accordion-faq .accordion .card-header a {
+  background-color: #f5f5fd;
+}
+
+
+/* ###### Accordion ###### */

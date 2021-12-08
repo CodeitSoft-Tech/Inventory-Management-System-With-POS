@@ -1,0 +1,121 @@
+/*Color variables*/
+/*gray variables*/
+/*white variables*/
+/*black variables*/
+/*color1*/
+/*color2*/
+/*color3*/
+/*color4*/
+/*color5*/
+@media (min-width: 1025px) {
+  .page {
+    width: 1170px;
+    margin: 0 auto;
+    background: #ebeef1;
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    min-height: 100vh;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
+  }
+  body {
+    background: #c5cacf;
+  }
+  .header.top-header {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  .hor-menu.horizontal-main {
+    max-width: 1170px;
+  }
+  .main-content .container, .main-content .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-header > .container, .main-header > .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .app-sidebar {
+    right: auto !important;
+  }
+  .side-header {
+    left: auto !important;
+    right: auto !important;
+    z-index: 99;
+  }
+  .main-header.side-header {
+    max-width: 1170px;
+  }
+  .nav-tabs .nav-link {
+    padding: 1rem 1.2rem;
+  }
+  .app.sidenav-toggled .app-sidebar.comb-sidebar {
+    right: -230px !important;
+  }
+  .horizontalMenu > .horizontalMenu-list > li:last-child > ul.sub-menu {
+    left: 0 !important;
+  }
+  .page-style1 .page-content {
+    z-index: 999;
+  }
+  .app-header {
+    padding-left: 10px !important;
+  }
+  .second-sidemenu {
+    right: auto !important;
+    margin-right: 70px;
+  }
+  .app.sidebar-mini.sidenav-toggled4 .first-sidemenu {
+    right: auto !important;
+  }
+  .header .form-inline .form-control {
+    width: auto;
+  }
+  .horizontalMenucontainer .main-header.hor-header {
+    max-width: 1170px;
+  }
+  .modal-backdrop {
+    z-index: 9;
+  }
+  .app.sidebar-mini .main-header.side-header {
+    max-width: 1170px;
+    margin: 0 auto;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0;
+  }
+  .main-sidebar-sticky {
+    right: auto;
+  }
+}
+
+.card--calendar .ui-datepicker .ui-datepicker-calendar td a {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+@media (min-width: 992px) {
+  .main-navbar.sticky.sticky-pin {
+    max-width: 1170px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-sidebar {
+    right: auto !important;
+  }
+}
+
+.main-navbar {
+  right: auto !important;
+}
+/*# sourceMappingURL=boxed.css.map */

@@ -1,0 +1,215 @@
+
+/* ###### Badge ###### */
+
+.badge {
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 4px 6px 5px;
+  display: inline-block;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.badge-pill {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .badge {
+    transition: none;
+  }
+}
+
+a.badge {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+.badge:empty {
+  display: none;
+}
+
+.btn .badge, .sp-container button .badge {
+  position: relative;
+  top: -1px;
+}
+
+.badge-secondary {
+  color: $white !important;
+  background-color: $secondary;
+}
+
+a.badge-secondary {
+  &:hover {
+    color: $white !important;
+    background-color: #e06b32;
+  }
+
+  &:focus {
+    color: $white !important;
+    background-color: #e06b32;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(236, 131, 27, 0.5);
+  }
+
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(236, 131, 27, 0.5);
+  }
+}
+
+.badge-success {
+  color: $white !important;
+  background-color: $success;
+}
+
+a.badge-success {
+  &:hover {
+    color: $white !important;
+    background-color: #37ce4f;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: #37ce4f;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(59, 176, 1, 0.5);
+  }
+
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(59, 176, 1, 0.5);
+  }
+}
+
+.badge-info {
+  color: $white !important;
+  background-color: $info;
+}
+
+a.badge-info {
+  &:hover {
+    color: $white !important;
+    background-color: #06aff1;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: #06aff1;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  }
+
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  }
+}
+
+.badge-warning {
+  color: #0e0e0e !important;
+  background-color: #ecb529;
+}
+
+a.badge-warning {
+  &:hover {
+    color: #8f9cc0 !important;
+    background-color: #d39e00;
+  }
+
+  &:focus {
+    color: #8f9cc0;
+    background-color: #d39e00;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+  }
+
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+  }
+}
+
+.badge-danger {
+  color: $white !important;
+  background-color: $danger;
+}
+
+a.badge-danger {
+  &:hover {
+    color: $white !important;
+    background-color: #f53729;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: #f53729;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  }
+
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  }
+}
+
+.badge-pink {
+  color: $white !important;
+  background-color: #ff75ad;
+}
+
+a.badge-pink {
+  &:hover, &:focus {
+    color: $white !important;
+    background-color: #ff75ad;
+  }
+}
+
+
+.badge-dark {
+  color: $white;
+  background-color: #8f9cc0;
+}
+
+a.badge-dark {
+  &:hover {
+    color: $white !important;
+    background-color: #131212;
+  }
+
+  &:focus {
+    color: $white !important;
+    background-color: #131212;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(59, 72, 99, 0.5);
+  }
+
+  &.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(59, 72, 99, 0.5);
+  }
+}
+.badge-success-light{
+    color: $success !important;
+    background: rgba(25, 177 ,89 , 0.2);
+}
+.badge-info-light{
+    background: rgba(1, 184, 255 , 0.2);
+    color: $info;
+}
+
+/* ###### Badge ###### */

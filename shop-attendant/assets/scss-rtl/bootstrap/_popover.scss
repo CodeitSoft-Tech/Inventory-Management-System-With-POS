@@ -1,0 +1,340 @@
+/* ###### Popover  ###### */
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: block;
+  max-width: 276px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.76562rem;
+  word-wrap: break-word;
+  background-color: $white;
+  background-clip: padding-box;
+  border: 1px solid #e8e8f7;
+  border-radius: 0.3rem;
+  padding: 0;
+
+  &.show {
+    box-shadow: -8px 12px 18px 0 rgba(21, 21, 62, 0.3);
+  }
+
+  .arrow {
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0.5rem;
+    margin: 0 0.3rem;
+
+    &::before, &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      border-color: transparent;
+      border-style: solid;
+    }
+  }
+}
+
+.popover-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+
+  &::before {
+    display: none !important;
+  }
+
+  &:empty {
+    display: none;
+  }
+}
+
+.popover-body {
+  padding: 0.5rem 0.75rem;
+  color: #8f9cc0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.popover-head-primary {
+  .popover-header {
+    color: $white;
+  }
+
+  &.bs-popover-top .arrow, &.bs-popover-auto[x-placement^="top"] .arrow {
+    bottom: -7px;
+  }
+
+  &.bs-popover-left .arrow, &.bs-popover-auto[x-placement^="left"] .arrow {
+    right: -7px;
+  }
+
+  &.bs-popover-right .arrow, &.bs-popover-auto[x-placement^="right"] .arrow {
+    left: -7px;
+  }
+}
+
+.popover-head-secondary {
+  .popover-header {
+    color: $white;
+    background-color: $secondary;
+  }
+
+  &.bs-popover-top .arrow, &.bs-popover-auto[x-placement^="top"] .arrow {
+    bottom: -7px;
+  }
+
+  &.bs-popover-left .arrow, &.bs-popover-auto[x-placement^="left"] .arrow {
+    right: -7px;
+  }
+
+  &.bs-popover-right .arrow, &.bs-popover-auto[x-placement^="right"] .arrow {
+    left: -7px;
+  }
+
+  &.bs-popover-bottom .arrow::after, &.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+    border-bottom-color: $secondary;
+  }
+}
+
+.popover-head-primary, .popover-head-secondary {
+  border: 0;
+
+  .popover-header {
+    border: 0;
+  }
+}
+
+.popover-head-primary .popover-body, .popover-head-secondary .popover-body {
+  border: 1px solid rgba(28, 39, 60, 0.2);
+  border-top-width: 0;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.popover-head-primary {
+  &.bs-popover-bottom .arrow::before, &.bs-popover-auto[x-placement^="bottom"] .arrow::before {
+    display: none;
+  }
+}
+
+.popover-head-secondary {
+  &.bs-popover-bottom .arrow::before, &.bs-popover-auto[x-placement^="bottom"] .arrow::before {
+    display: none;
+  }
+}
+
+.popover-primary {
+  border-width: 0;
+  padding: 15px;
+
+  .popover-header {
+    background-color: transparent;
+    border-bottom-width: 0;
+    padding: 0 0 15px;
+    color: $white;
+  }
+
+  .popover-body {
+    padding: 0;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .arrow::before {
+    display: none;
+  }
+}
+
+.popover-secondary {
+  background-color: $secondary;
+  border-width: 0;
+  padding: 15px;
+
+  .popover-header {
+    background-color: transparent;
+    border-bottom-width: 0;
+    padding: 0 0 15px;
+    color: $white;
+  }
+
+  .popover-body {
+    padding: 0;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .arrow::before {
+    display: none;
+  }
+
+  &.bs-popover-top .arrow::after, &.bs-popover-auto[x-placement^="top"] .arrow::after {
+    border-top-color: $secondary;
+  }
+
+  &.bs-popover-bottom .arrow::after, &.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+    border-bottom-color: $secondary;
+  }
+
+  &.bs-popover-left .arrow::after, &.bs-popover-auto[x-placement^="left"] .arrow::after {
+    border-left-color: $secondary;
+  }
+
+  &.bs-popover-right .arrow::after, &.bs-popover-auto[x-placement^="right"] .arrow::after {
+    border-right-color: $secondary;
+  }
+}
+
+.popover-static-demo {
+  background-color: $background;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  .popover {
+    z-index: 0;
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .bs-popover-top .arrow, .bs-popover-auto[x-placement^="top"] .arrow, .bs-popover-bottom .arrow, .bs-popover-auto[x-placement^="bottom"] .arrow {
+    left: 50%;
+    margin-left: -5px;
+  }
+
+  .bs-popover-left, .bs-popover-auto[x-placement^="left"], .bs-popover-right, .bs-popover-auto[x-placement^="right"] {
+    margin-top: 5px;
+  }
+
+  .bs-popover-left .arrow, .bs-popover-auto[x-placement^="left"] .arrow, .bs-popover-right .arrow, .bs-popover-auto[x-placement^="right"] .arrow {
+    top: 50%;
+    margin-top: -5px;
+  }
+}
+
+.bs-popover-top, .bs-popover-auto[x-placement^="top"] {
+  margin-bottom: 0.5rem;
+}
+
+.bs-popover-top > .arrow, .bs-popover-auto[x-placement^="top"] > .arrow {
+  bottom: calc((0.5rem + 1px) * -1);
+}
+
+.bs-popover-top > .arrow::before, .bs-popover-auto[x-placement^="top"] > .arrow::before {
+  bottom: 0;
+  border-width: 0.5rem 0.5rem 0;
+  border-top-color: $background;
+}
+
+.bs-popover-top > .arrow::after, .bs-popover-auto[x-placement^="top"] > .arrow::after {
+  bottom: 1px;
+  border-width: 0.5rem 0.5rem 0;
+  border-top-color: $white;
+}
+
+.bs-popover-right, .bs-popover-auto[x-placement^="right"] {
+  margin-left: 0.5rem;
+}
+
+.bs-popover-right > .arrow, .bs-popover-auto[x-placement^="right"] > .arrow {
+  left: calc((0.5rem + 1px) * -1);
+  width: 0.5rem;
+  height: 1rem;
+  margin: 0.3rem 0;
+}
+
+.bs-popover-right > .arrow::before, .bs-popover-auto[x-placement^="right"] > .arrow::before {
+  left: 0;
+  border-width: 0.5rem 0.5rem 0.5rem 0;
+  border-right-color: $background;
+}
+
+.bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
+  left: 1px;
+  border-width: 0.5rem 0.5rem 0.5rem 0;
+  border-right-color: $white;
+}
+
+.bs-popover-bottom, .bs-popover-auto[x-placement^="bottom"] {
+  margin-top: 0.5rem;
+}
+
+.bs-popover-bottom > .arrow, .bs-popover-auto[x-placement^="bottom"] > .arrow {
+  top: calc((0.5rem + 1px) * -1);
+}
+
+.bs-popover-bottom > .arrow::before, .bs-popover-auto[x-placement^="bottom"] > .arrow::before {
+  top: 0;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
+  border-bottom-color: $background;
+}
+
+.bs-popover-bottom > .arrow::after, .bs-popover-auto[x-placement^="bottom"] > .arrow::after {
+  top: 1px;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
+  border-bottom-color: $white;
+}
+
+.bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 1rem;
+  margin-left: -0.5rem;
+  content: "";
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.bs-popover-left, .bs-popover-auto[x-placement^="left"] {
+  margin-right: 0.5rem;
+}
+
+.bs-popover-left > .arrow, .bs-popover-auto[x-placement^="left"] > .arrow {
+  right: calc((0.5rem + 1px) * -1);
+  width: 0.5rem;
+  height: 1rem;
+  margin: 0.3rem 0;
+}
+
+.bs-popover-left > .arrow::before, .bs-popover-auto[x-placement^="left"] > .arrow::before {
+  right: 0;
+  border-width: 0.5rem 0 0.5rem 0.5rem;
+  border-left-color: $background;
+}
+
+.bs-popover-left > .arrow::after, .bs-popover-auto[x-placement^="left"] > .arrow::after {
+  right: 1px;
+  border-width: 0.5rem 0 0.5rem 0.5rem;
+  border-left-color: $white;
+}
+
+.note-popover .popover-content .note-color .dropdown-toggle, .note-editor .note-toolbar .note-color .dropdown-toggle {
+    padding-right: 5px !important;
+}
+
+/* ###### Popover  ###### */

@@ -1,0 +1,180 @@
+/* ###### Right-sidebar  ###### */
+
+
+[data-toggle="sidebar"] {
+  display: block;
+}
+
+.sidebar {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 300px;
+  bottom: 0;
+  z-index: 1035;
+  min-height: 100%;
+  max-height: none;
+  overflow: auto;
+  background-color: $white;
+  box-shadow: 0 8px 16px 0 rgba(162, 169, 204, 0.24);
+}
+
+.sidebar-left {
+  left: 0;
+}
+
+.sidebar-right, .sidebar-profile {
+  right: 0;
+}
+
+.row .sidebar {
+  &.sidebar-left.sidebar-xs-show {
+    left: 0;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  &.sidebar-right.sidebar-xs-show, &.sidebar-profile.sidebar-xs-show {
+    right: 0;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .row .sidebar {
+    &.sidebar-left.sidebar-sm-show {
+      left: 0;
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+
+    &.sidebar-right.sidebar-sm-show, &.sidebar-profile.sidebar-sm-show {
+      right: 0;
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .row .sidebar {
+    &.sidebar-left.sidebar-md-show {
+      left: 0;
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+
+    &.sidebar-right.sidebar-md-show, &.sidebar-profile.sidebar-md-show {
+      right: 0;
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .row .sidebar {
+    &.sidebar-left.sidebar-lg-show {
+      left: 0;
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+
+    &.sidebar-right.sidebar-lg-show, &.sidebar-profile.sidebar-lg-show {
+      right: 0;
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.sidebar-animate {
+  -webkit-transition: -webkit-transform 300ms ease;
+  -moz-transition: -moz-transform 300ms ease;
+  -o-transition: transform 300ms ease;
+  transition: transform 300ms ease;
+}
+
+.sidebar {
+  &.sidebar-left {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+
+    &.sidebar-open {
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  &.sidebar-right, &.sidebar-profile {
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+
+  &.sidebar-right.sidebar-open, &.sidebar-profile.sidebar-open {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.sidebar-body h5 {
+  padding: 13px 22px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f2f8;
+  background: $background;
+}
+
+.sidebar-icon {
+  position: absolute;
+  left: 8px;
+  top: 3px;
+}
+
+.side-header {
+  .main-profile-menu .dropdown-menu {
+    top: 53px;
+  }
+
+  .header-search .dropdown-menu {
+    top: 50px;
+  }
+}
+
+/* ###### Right-sidebar  ###### */

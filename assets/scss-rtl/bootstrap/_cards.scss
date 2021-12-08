@@ -1,0 +1,828 @@
+/* ###### Card  ###### */
+
+.card {
+  border-radius: 11px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $white;
+  background-clip: border-box;
+  border: 1px solid #e8e8f7;
+
+  &.text-white .main-content-label, &.tx-white .main-content-label {
+    color: $white;
+  }
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 25px;
+}
+
+.card {
+  > {
+    hr {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .list-group {
+      &:first-child .list-group-item:first-child {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+
+      &:last-child .list-group-item:last-child {
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+    }
+  }
+
+  .card {
+    box-shadow: none;
+  }
+}
+
+.card-subtitle {
+  margin-top: -0.375rem;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link {
+  &:hover {
+    text-decoration: none;
+  }
+
+  + .card-link {
+    margin-left: 1.25rem;
+  }
+}
+
+.card-header {
+  padding: 20px 25px 0 25px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e8e8f7;
+  background:transparent;
+
+  &:first-child {
+    border-radius: 11px 11px 0 0;
+  }
+
+  + .list-group .list-group-item:first-child {
+    border-top: 0;
+  }
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background: $white;
+  border-top: 1px solid #e8e8f7;
+  background:transparent;
+
+  &:last-child {
+    border-radius: 11px;
+  }
+}
+
+.card-header-tabs {
+  margin-right: -0.625rem;
+  margin-bottom: -0.75rem;
+  margin-left: -0.625rem;
+  border-bottom: 0;
+}
+
+.card-header-pills {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: calc(3px - 1px);
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(3px - 1px);
+  border-top-right-radius: calc(3px - 1px);
+}
+
+.card-img-bottom {
+  width: 100%;
+  border-bottom-right-radius: calc(3px - 1px);
+  border-bottom-left-radius: calc(3px - 1px);
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: column;
+
+  .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-deck {
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .card {
+      display: flex;
+      flex: 1 0 0%;
+      flex-direction: column;
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
+  }
+}
+
+.card-group {
+  display: flex;
+  flex-direction: column;
+
+  > .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-group {
+    flex-flow: row wrap;
+
+    > .card {
+      flex: 1 0 0%;
+      margin-bottom: 0;
+
+      + .card {
+        margin-left: 0;
+        border-left: 0;
+      }
+
+      &:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        .card-img-top, .card-header {
+          border-top-right-radius: 0;
+        }
+
+        .card-img-bottom, .card-footer {
+          border-bottom-right-radius: 0;
+        }
+      }
+
+      &:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        .card-img-top, .card-header {
+          border-top-left-radius: 0;
+        }
+
+        .card-img-bottom, .card-footer {
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.card-columns .card {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 3;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+
+    .card {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
+
+.card-header, .card-footer {
+  position: relative;
+  border-color: $background;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+.card-header-tab {
+  border-bottom: 0;
+  padding: 0;
+}
+
+.card-item {
+  .card-item-body {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .card-item-icon {
+    &.card-icon {
+      background: rgba(77, 76, 178, 0.1);
+    }
+
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 20px;
+    bottom: 21px;
+    top: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-item-body .card-item-stat {
+    .card-item-figure {
+      display: flex;
+      font-weight: 500;
+      font-size: 1.125rem;
+      letter-spacing: .5px;
+      color: #383942;
+    }
+
+    small {
+      font-size: 85%;
+      font-weight: 300;
+      text-transform: capitalize;
+      color: #8d95b1;
+    }
+  }
+
+  .card-item-title {
+    small {
+      font-size: 80%;
+      font-weight: 300;
+      text-transform: capitalize;
+      color: #8d95b1;
+    }
+
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0;
+    color: #383942;
+  }
+
+  .card-item-body .card-item-redirect .btn-card-item-view {
+    background: #F4F7FD;
+    color: #A5ABBA;
+    font-weight: 300;
+    letter-spacing: .5px;
+    border: none;
+    transition: all, 0.3s;
+  }
+}
+
+.card-dashboard-calendar {
+  padding: 20px;
+  box-shadow: -7.829px 11.607px 20px 0px rgb(228, 227, 245);
+
+  .main-content-label {
+    color: #1c273c;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .ui-datepicker-inline {
+    border-width: 0;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ui-datepicker {
+    .ui-datepicker-header {
+      border-bottom: 0;
+      padding: 13px 10px;
+      margin: auto;
+
+      .ui-datepicker-next::before, .ui-datepicker-prev::before {
+        top: 12px;
+      }
+    }
+
+    .ui-datepicker-calendar {
+      width: 100%;
+
+      th {
+        font-size: 12px;
+        text-align: center;
+      }
+
+      td {
+        text-align: center;
+
+        a {
+          display: block;
+          font-size: 11.7px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .ui-datepicker-today a {
+        color: $white;
+        font-weight: 700;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .card-dashboard-calendar .ui-datepicker .ui-datepicker-calendar {
+    width: 100%;
+  }
+}
+
+.card-dashboard-twentyfour {
+  .card-header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+  }
+
+  .main-content-label {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .card-body {
+    padding: 15px 20px 20px;
+  }
+
+  .card-body-top {
+    display: flex;
+    margin-bottom: 20px;
+
+    h6 {
+      color: #8f9cc0;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      margin-bottom: 0;
+      letter-spacing: -.75px;
+
+      small {
+        font-weight: 600;
+      }
+
+      span {
+        color: #a8afc7;
+        font-weight: 400;
+        letter-spacing: normal;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0;
+      color: #a8afc7;
+      font-size: 11px;
+    }
+
+    > div + div {
+      margin-left: 30px;
+    }
+  }
+
+  .main-content-label, .card-table-two .main-content-label {
+    font-size: 10px;
+    color: #8f9cc0;
+    letter-spacing: .5px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-dashboard-twentyfour .card-body-top h6 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-dashboard-twentyfour .card-body-top label {
+    font-size: 0.875rem;
+  }
+}
+
+.card-table-two .card-dashboard-twentyfour .main-content-label, .card-dashboard-twentyfour .card-dashboard-eight .main-content-label, .card-dashboard-eight .card-dashboard-twentyfour .main-content-label {
+  font-size: 10px;
+  color: #8f9cc0;
+  letter-spacing: .5px;
+  margin-bottom: 0;
+}
+
+.card-dashboard-twentyfour {
+  .chart-legend {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    line-height: .6;
+
+    span {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin-right: 5px;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+
+      + div {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .chart-wrapper {
+    position: relative;
+    margin-right: -10px;
+  }
+
+  .flot-chart {
+    width: 100%;
+    height: 130px;
+  }
+}
+
+.card-dashboard-twentyfive {
+  .main-content-label {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .col + .col {
+    border-left: 1px solid #e8e8f7;
+  }
+
+  .card-label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-bottom: 2px;
+    color: #a8afc7;
+    white-space: nowrap;
+  }
+
+  .card-value {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #8f9cc0;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+  }
+
+  .chart-wrapper {
+    position: relative;
+    margin: 0 -8px -5px;
+  }
+
+  .flot-chart {
+    width: 100%;
+    height: 35px;
+  }
+}
+
+.card-dashboard-twentysix {
+  .card-header {
+    padding: 15px 15px 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-content-label {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  .chart-legend {
+    display: flex;
+    align-items: center;
+
+    > div {
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+
+      + div {
+        margin-left: 15px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 2px;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+    h6 {
+      margin-bottom: 0;
+      color: #8f9cc0;
+      font-size: 22px;
+      font-weight: 600;
+      font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      letter-spacing: -.5px;
+      line-height: 1;
+
+      span {
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: -1px;
+      }
+    }
+
+    label {
+      font-size: 12px;
+      margin-bottom: 0;
+      color: #a8afc7;
+    }
+  }
+
+  .chart-wrapper {
+    position: relative;
+    margin: -30px -18px -15px -18px;
+  }
+
+  .flot-chart {
+    width: 100%;
+    height: 120px;
+
+    .flot-x-axis > div {
+      font-size: 10px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.75);
+      transform: translateY(-20px);
+    }
+
+    .flot-y-axis > div {
+      font-size: 10px;
+      transform: translateX(33px);
+      color: rgba(28, 39, 60, 0.5);
+    }
+  }
+
+  &.card-dark-one .main-content-label, &.card-dark-two .main-content-label, &.card-dark-one .card-body h6, &.card-dark-two .card-body h6 {
+    color: $white;
+  }
+
+  &.card-dark-one .card-body h6 span, &.card-dark-two .card-body h6 span {
+    color: $white-5;
+  }
+
+  &.card-dark-one .card-body label, &.card-dark-two .card-body label {
+    color: $white-7;
+  }
+
+  &.card-dark-one .flot-chart .flot-y-axis > div, &.card-dark-two .flot-chart .flot-y-axis > div {
+    color: $white-2;
+  }
+
+  &.card-dark-one {
+    background-repeat: repeat-x;
+  }
+
+  &.card-dark-two {
+    background-image: linear-gradient(to bottom, #0a47ff 0%, $primary 100%);
+    background-repeat: repeat-x;
+  }
+}
+
+.card-box img {
+	position: absolute;
+    bottom: -3px;
+    left: -3px;
+}
+
+.card-table {
+  &.table-vcenter th {
+    font-weight: 600 !important;
+  }
+
+  .badge {
+    padding: 9px 13px 9px;
+  }
+}
+
+.custom-card {
+  margin-bottom: 20px;
+  border: 0;
+  box-shadow: -7.829px 11.607px 20px 0px rgb(228, 227, 245);
+}
+
+.card-aside {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.card-aside-column {
+  min-width: 5rem;
+  width: 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  background: no-repeat center/cover;
+}
+
+.card-options {
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-order: 100;
+  order: 100;
+  margin-left: -.5rem;
+  color: #a8afc7;
+  -ms-flex-item-align: center;
+  align-self: center;
+
+  a {
+    &:not(.btn) {
+        margin-left: 0;
+		color: #505069;
+		display: inline-block;
+		min-width: 1rem;
+		padding: 10px 15px;
+
+      &:hover {
+        text-decoration: none;
+        color: #505069;
+      }
+    }
+    
+  }
+}
+
+.card-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  margin: 0;
+}
+
+.card-collapsed > :not(.card-header):not(.card-status) {
+  display: none;
+}
+
+.card-options {
+  a:not(.btn) i {
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+
+  .dropdown-toggle:after {
+    display: none;
+  }
+}
+
+.custom-card-header {
+  background: $white;
+  display: flex;
+  line-height: 0;
+}
+
+.card-body + .card-body {
+  border-top: 1px solid #f0f2f8;
+}
+
+.card-sub-title {
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.card-blog-overlay1 {
+  background: url('../img/media/3.jpg');
+  background-size: cover;
+}
+
+.card-blog-overlay2 {
+  background: url('../img/media/1.jpg');
+  background-size: cover;
+}
+
+.card-blog-overlay {
+  background: url('../img/media/2.jpg');
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: $black-5;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+}
+
+.card-blog-overlay1:before, .card-blog-overlay2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: $black-5;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.card-blog-overlay .custom-card-header, .card-blog-overlay1 .custom-card-header, .card-blog-overlay2 .custom-card-header {
+  background: none;
+  border-bottom: 1px solid $white-2;
+}
+
+.card-blog-overlay .card-footer, .card-blog-overlay1 .card-footer, .card-blog-overlay2 .card-footer {
+  background: none;
+  border-top: 1px solid $white-2;
+}
+
+.card-item-desc .card-item-desc-1 dt {
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.card-item-desc {
+  dl, dd {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .card-item-desc-1 dd {
+    font-size: 13px;
+    color: #737f9e;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-box img {
+    position: relative !important;
+    bottom: -27px !important;
+    left: -14px !important;
+  }
+}
+
+/* ###### Card  ###### */

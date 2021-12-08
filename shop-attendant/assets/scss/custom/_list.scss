@@ -1,0 +1,46 @@
+/* ###### List ###### */
+
+.main-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  + .main-list-item {
+    border-top: 1px solid #e8e8f7;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  h6 {
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+
+  > div {
+    &:first-child h6 {
+      color: #1d212f;
+    }
+
+    span {
+      color: #a8afc7;
+      font-size: 12px;
+    }
+
+    &:last-child {
+      text-align: right;
+
+      h6 {
+        line-height: 1;
+      }
+    }
+  }
+}
+.list-unstyled li {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+/* ###### List ###### */

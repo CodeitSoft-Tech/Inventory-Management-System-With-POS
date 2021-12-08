@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+		<meta name="description" content="Spruha -  Admin Panel HTML Dashboard Template">
+		<meta name="author" content="Spruko Technologies Private Limited">
+		<meta name="keywords" content="admin,dashboard,panel,bootstrap admin template,bootstrap dashboard,dashboard,themeforest admin dashboard,themeforest admin,themeforest dashboard,themeforest admin panel,themeforest admin template,themeforest admin dashboard,cool admin,it dashboard,admin design,dash templates,saas dashboard,dmin ui design">
+
+		<!-- Favicon -->
+		<link rel="icon" href="../../assets/img/brand/favicon.ico" type="image/x-icon"/>
+
+		<!-- Title -->
+		<title> Spruha -  Admin Panel HTML Dashboard Template</title>
+
+		<!-- Icons css-->
+		<link href="../../assets/plugins/web-fonts/icons.css" rel="stylesheet" />
+		<link href="../../assets/plugins/web-fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+		<link href="../../assets/plugins/web-fonts/plugin.css" rel="stylesheet" />
+
+		<!-- Style css-->
+		<link href="../../assets/css/style.css" rel="stylesheet">
+		<link href="../../assets/css/skins.css" rel="stylesheet">
+		<link href="../../assets/css/dark-style.css" rel="stylesheet">
+		<link href="../../assets/css/colors/default.css" rel="stylesheet">
+
+		<!-- Color css-->
+		<link id="theme" rel="stylesheet" type="text/css" media="all" href="../../assets/css/colors/color.css">
+
+		<!-- Select2 css-->
+		<link href="../../assets/plugins/select2/css/select2.min.css" rel="stylesheet">
+
+		<!-- Mutipleselect css-->
+		<link rel="stylesheet" href="../../assets/plugins/multipleselect/multiple-select.css">
+
+		<!-- Sidemenu css-->
+		<link href="../../assets/css/sidemenu/sidemenu.css" rel="stylesheet">
+
+	</head>
+
+	<body class="horizontalmenu">
+
+		<!-- Loader -->
+		<div id="global-loader">
+			<img src="../../assets/img/loader.svg" class="loader-img" alt="Loader">
+		</div>
+		<!-- End Loader -->
+
+		<!-- Page -->
+		<div class="page">
+
+			<!-- Main Header-->
+			<div class="main-header side-header">
+				<div class="container">
+					<div class="main-header-left">
+						<a class="main-header-menu-icon d-lg-none" href="" id="mainNavShow"><span></span></a>
+						<a class="main-logo" href="index.html">
+							<img src="../../assets/img/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+							<img src="../../assets/img/brand/logo-light.png" class="header-brand-img desktop-logo theme-logo" alt="logo">
+						</a>
+					</div>
+					<div class="main-header-center">
+						<div class="responsive-logo">
+							<a href="index.html"><img src="../../assets/img/brand/logo.png" class="mobile-logo" alt="logo"></a>
+							<a href="index.html"><img src="../../assets/img/brand/logo-light.png" class="mobile-logo-dark" alt="logo"></a>
+						</div>
+						<div class="input-group">
+							<div class="input-group-btn search-panel">
+								<select class="form-control select2-no-search">
+									<option label="All categories">
+									</option>
+									<option value="IT Projects">
+										IT Projects
+									</option>
+									<option value="Business Case">
+										Business Case
+									</option>
+									<option value="Microsoft Project">
+										Microsoft Project
+									</option>
+									<option value="Risk Management">
+										Risk Management
+									</option>
+									<option value="Team Building">
+										Team Building
+									</option>
+								</select>
+							</div>
+							<input type="search" class="form-control rounded-0" placeholder="Search for anything...">
+							<button class="btn search-btn"><i class="fe fe-search"></i></button>
+						</div>
+					</div>
+					<div class="main-header-right">
+						<div class="dropdown header-search">
+							<a class="nav-link icon header-search">
+								<i class="fe fe-search"></i>
+							</a>
+							<div class="dropdown-menu">
+								<div class="main-form-search p-2">
+									<div class="input-group">
+										<div class="input-group-btn search-panel">
+											<select class="form-control select2-no-search">
+												<option label="All categories">
+												</option>
+												<option value="IT Projects">
+													IT Projects
+												</option>
+												<option value="Business Case">
+													Business Case
+												</option>
+												<option value="Microsoft Project">
+													Microsoft Project
+												</option>
+												<option value="Risk Management">
+													Risk Management
+												</option>
+												<option value="Team Building">
+													Team Building
+												</option>
+											</select>
+										</div>
+										<input type="search" class="form-control" placeholder="Search for anything...">
+										<button class="btn search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown main-header-notification flag-dropdown">
+							<a class="nav-link icon country-Flag">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#f0f0f0"/><g fill="#0052b4"><path d="M52.92 100.142c-20.109 26.163-35.272 56.318-44.101 89.077h133.178L52.92 100.142zM503.181 189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075 89.076h133.176zM8.819 322.784c8.83 32.758 23.993 62.913 44.101 89.075l89.074-89.075H8.819zM411.858 52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177l89.076-89.075zM100.142 459.079c26.163 20.109 56.318 35.272 89.076 44.102V370.005l-89.076 89.074zM189.217 8.819c-32.758 8.83-62.913 23.993-89.075 44.101l89.075 89.075V8.819zM322.783 503.181c32.758-8.83 62.913-23.993 89.075-44.101l-89.075-89.075v133.176zM370.005 322.784l89.075 89.076c20.108-26.162 35.272-56.318 44.101-89.076H370.005z"/></g><g fill="#d80027"><path d="M509.833 222.609H289.392V2.167A258.556 258.556 0 00256 0c-11.319 0-22.461.744-33.391 2.167v220.441H2.167A258.556 258.556 0 000 256c0 11.319.744 22.461 2.167 33.391h220.441v220.442a258.35 258.35 0 0066.783 0V289.392h220.442A258.533 258.533 0 00512 256c0-11.317-.744-22.461-2.167-33.391z"/><path d="M322.783 322.784L437.019 437.02a256.636 256.636 0 0015.048-16.435l-97.802-97.802h-31.482v.001zM189.217 322.784h-.002L74.98 437.019a256.636 256.636 0 0016.435 15.048l97.802-97.804v-31.479zM189.217 189.219v-.002L74.981 74.98a256.636 256.636 0 00-15.048 16.435l97.803 97.803h31.481zM322.783 189.219L437.02 74.981a256.328 256.328 0 00-16.435-15.047l-97.802 97.803v31.482z"/></g></svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item d-flex ">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/french_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">French</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/germany_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Germany</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/italy_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Italy</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/russia_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Russia</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/spain_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">spain</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="dropdown d-md-flex">
+							<a class="nav-link icon full-screen-link" href="">
+								<i class="fe fe-maximize fullscreen-button fullscreen header-icons"></i>
+								<i class="fe fe-minimize fullscreen-button exit-fullscreen header-icons"></i>
+							</a>
+						</div>
+						<div class="dropdown main-header-notification">
+							<a class="nav-link icon" href="">
+								<i class="fe fe-bell header-icons"></i>
+								<span class="badge badge-danger nav-link-badge">4</span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="header-navheading">
+									<p class="main-notification-text">You have 1 unread notification<span class="badge badge-pill badge-primary ml-3">View all</span></p>
+								</div>
+								<div class="main-notification-list">
+									<div class="media new">
+										<div class="main-img-user online"><img alt="avatar" src="../../assets/img/users/5.jpg"></div>
+										<div class="media-body">
+											<p>Congratulate <strong>Olivia James</strong> for New template start</p><span>Oct 15 12:32pm</span>
+										</div>
+									</div>
+									<div class="media">
+										<div class="main-img-user"><img alt="avatar" src="../../assets/img/users/2.jpg"></div>
+										<div class="media-body">
+											<p><strong>Joshua Gray</strong> New Message Received</p><span>Oct 13 02:56am</span>
+										</div>
+									</div>
+									<div class="media">
+										<div class="main-img-user online"><img alt="avatar" src="../../assets/img/users/3.jpg"></div>
+										<div class="media-body">
+											<p><strong>Elizabeth Lewis</strong> added new schedule realease</p><span>Oct 12 10:40pm</span>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-footer">
+									<a href="#">View All Notifications</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-header-notification">
+							<a class="nav-link icon" href="chat.html">
+								<i class="fe fe-message-square header-icons"></i>
+								<span class="badge badge-success nav-link-badge">6</span>
+							</a>
+						</div>
+						<div class="dropdown main-profile-menu">
+							<a class="d-flex" href="">
+								<span class="main-img-user" ><img alt="avatar" src="../../assets/img/users/1.jpg"></span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="header-navheading">
+									<h6 class="main-notification-title">Sonia Taylor</h6>
+									<p class="main-notification-text">Web Designer</p>
+								</div>
+								<a class="dropdown-item border-top" href="profile.html">
+									<i class="fe fe-user"></i> My Profile
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-edit"></i> Edit Profile
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-settings"></i> Account Settings
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-settings"></i> Support
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-compass"></i> Activity
+								</a>
+								<a class="dropdown-item" href="signin.html">
+									<i class="fe fe-power"></i> Sign Out
+								</a>
+							</div>
+						</div>
+						<div class="dropdown d-md-flex header-settings">
+							<a href="#" class="nav-link icon" data-toggle="sidebar-right" data-target=".sidebar-right">
+								<i class="fe fe-align-right header-icons"></i>
+							</a>
+						</div>
+						<button class="navbar-toggler navresponsive-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+							aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fe fe-more-vertical header-icons navbar-toggler-icon"></i>
+						</button><!-- Navresponsive closed -->
+					</div>
+				</div>
+			</div>
+			<!-- End Main Header-->
+
+			<!-- Mobile-header -->
+			<div class="mobile-main-header">
+				<div class="mb-1 navbar navbar-expand-lg  nav nav-item  navbar-nav-right responsive-navbar navbar-dark  ">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+						<div class="d-flex order-lg-2 ml-auto">
+							<div class="dropdown header-search">
+								<a class="nav-link icon header-search">
+									<i class="fe fe-search"></i>
+								</a>
+								<div class="dropdown-menu">
+									<div class="main-form-search p-2">
+										<div class="input-group">
+											<div class="input-group-btn search-panel">
+												<select class="form-control select2-no-search">
+													<option label="All categories">
+													</option>
+													<option value="IT Projects">
+														IT Projects
+													</option>
+													<option value="Business Case">
+														Business Case
+													</option>
+													<option value="Microsoft Project">
+														Microsoft Project
+													</option>
+													<option value="Risk Management">
+														Risk Management
+													</option>
+													<option value="Team Building">
+														Team Building
+													</option>
+												</select>
+											</div>
+											<input type="search" class="form-control" placeholder="Search for anything...">
+											<button class="btn search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown main-header-notification flag-dropdown">
+							<a class="nav-link icon country-Flag">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#f0f0f0"/><g fill="#0052b4"><path d="M52.92 100.142c-20.109 26.163-35.272 56.318-44.101 89.077h133.178L52.92 100.142zM503.181 189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075 89.076h133.176zM8.819 322.784c8.83 32.758 23.993 62.913 44.101 89.075l89.074-89.075H8.819zM411.858 52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177l89.076-89.075zM100.142 459.079c26.163 20.109 56.318 35.272 89.076 44.102V370.005l-89.076 89.074zM189.217 8.819c-32.758 8.83-62.913 23.993-89.075 44.101l89.075 89.075V8.819zM322.783 503.181c32.758-8.83 62.913-23.993 89.075-44.101l-89.075-89.075v133.176zM370.005 322.784l89.075 89.076c20.108-26.162 35.272-56.318 44.101-89.076H370.005z"/></g><g fill="#d80027"><path d="M509.833 222.609H289.392V2.167A258.556 258.556 0 00256 0c-11.319 0-22.461.744-33.391 2.167v220.441H2.167A258.556 258.556 0 000 256c0 11.319.744 22.461 2.167 33.391h220.441v220.442a258.35 258.35 0 0066.783 0V289.392h220.442A258.533 258.533 0 00512 256c0-11.317-.744-22.461-2.167-33.391z"/><path d="M322.783 322.784L437.019 437.02a256.636 256.636 0 0015.048-16.435l-97.802-97.802h-31.482v.001zM189.217 322.784h-.002L74.98 437.019a256.636 256.636 0 0016.435 15.048l97.802-97.804v-31.479zM189.217 189.219v-.002L74.981 74.98a256.636 256.636 0 00-15.048 16.435l97.803 97.803h31.481zM322.783 189.219L437.02 74.981a256.328 256.328 0 00-16.435-15.047l-97.802 97.803v31.482z"/></g></svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item d-flex ">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/french_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">French</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/germany_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Germany</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/italy_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Italy</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/russia_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Russia</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/spain_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">spain</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="dropdown ">
+							<a class="nav-link icon full-screen-link">
+								<i class="fe fe-maximize fullscreen-button fullscreen header-icons"></i>
+								<i class="fe fe-minimize fullscreen-button exit-fullscreen header-icons"></i>
+							</a>
+						</div>
+						<div class="dropdown main-header-notification">
+							<a class="nav-link icon" href="">
+								<i class="fe fe-bell header-icons"></i>
+								<span class="badge badge-danger nav-link-badge">4</span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="header-navheading">
+									<p class="main-notification-text">You have 1 unread notification<span class="badge badge-pill badge-primary ml-3">View all</span></p>
+								</div>
+								<div class="main-notification-list">
+									<div class="media new">
+										<div class="main-img-user online"><img alt="avatar" src="../../assets/img/users/5.jpg"></div>
+										<div class="media-body">
+											<p>Congratulate <strong>Olivia James</strong> for New template start</p><span>Oct 15 12:32pm</span>
+										</div>
+									</div>
+									<div class="media">
+										<div class="main-img-user"><img alt="avatar" src="../../assets/img/users/2.jpg"></div>
+										<div class="media-body">
+											<p><strong>Joshua Gray</strong> New Message Received</p><span>Oct 13 02:56am</span>
+										</div>
+									</div>
+									<div class="media">
+										<div class="main-img-user online"><img alt="avatar" src="../../assets/img/users/3.jpg"></div>
+										<div class="media-body">
+											<p><strong>Elizabeth Lewis</strong> added new schedule realease</p><span>Oct 12 10:40pm</span>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-footer">
+									<a href="#">View All Notifications</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-header-notification mt-2">
+							<a class="nav-link icon" href="chat.html">
+								<i class="fe fe-message-square header-icons"></i>
+								<span class="badge badge-success nav-link-badge">6</span>
+							</a>
+						</div>
+						<div class="dropdown main-profile-menu">
+							<a class="d-flex" href="#">
+								<span class="main-img-user" ><img alt="avatar" src="../../assets/img/users/1.jpg"></span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="header-navheading">
+									<h6 class="main-notification-title">Sonia Taylor</h6>
+									<p class="main-notification-text">Web Designer</p>
+								</div>
+								<a class="dropdown-item border-top" href="profile.html">
+									<i class="fe fe-user"></i> My Profile
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-edit"></i> Edit Profile
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-settings"></i> Account Settings
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-settings"></i> Support
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-compass"></i> Activity
+								</a>
+								<a class="dropdown-item" href="signin.html">
+									<i class="fe fe-power"></i> Sign Out
+								</a>
+							</div>
+						</div>
+						<div class="dropdown  header-settings">
+							<a href="#" class="nav-link icon" data-toggle="sidebar-right" data-target=".sidebar-right">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-right header-icons"><line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line></svg>
+							</a>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile-header closed -->
+
+			<!-- Horizonatal menu-->
+			<div class="main-navbar hor-menu sticky">
+				<div class="container">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="ti-home"></i>Dashboard</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-wallet"></i>Crypto Currencies</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-dashbaord.html">Dashboard</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-market.html">Marketcap</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-currency-exchange.html">Currency exchange</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-buy-sell.html">Buy &amp; Sell</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-wallet.html">Wallet</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-transcations.html">Transcations</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-shopping-cart-full"></i>Ecommerce</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-dashboard.html">Dashboard</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-products.html">Products</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-product-details.html">Product Details</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-cart.html">Cart</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-checkout.html">Checkout</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-orders.html">Orders</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-account.html">Account</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-write"></i>Apps</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="widgets.html">Widgets</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="chat.html">Chat</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="cards.html">Cards</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="mail-inbox.html">Mail-Inbox</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="viewmail.html">View-Mail</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="calendar.html">Calendar</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="contacts.html">Contacts</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link with-sub" href="#">Submenu</a>
+									<ul class="nav-sub">
+										<li class="nav-sub-item">
+											<a class="nav-sub-link" href="#">Level-01</a>
+										</li>
+										<li class="nav-sub-item">
+											<a class="nav-sub-link"  href="#">Level-02</a>
+										</li>
+										<li class="nav-sub-item">
+											<a class="nav-sub-link with-sub"  href="#">Level-03</a>
+											<ul class="nav-sub">
+												<li class="nav-sub-item">
+													<a class="nav-sub-link"  href="#">Level-01</a>
+												</li>
+												<li class="nav-sub-item">
+													<a class="nav-sub-link"  href="#">Level-02</a>
+												</li>
+												<li class="nav-sub-item">
+													<a class="nav-sub-link"  href="#">Level-03</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-mega">
+							<a class="nav-link with-sub" href=""><i class="ti-package"></i>Components</a>
+							<div class="nav-sub nav-sub-mega">
+								<div class="container">
+									<div>
+										<ul class="nav">
+											<li><span>Elements</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="alerts.html">Alerts</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="avatar.html">Avatar</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="breadcrumbs.html">Breadcrumbs</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="buttons.html">Buttons</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="badge.html">Badge</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="dropdown.html">Dropdown</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="thumbnails.html">Thumbnails</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="list-group.html">List Group</a>
+											</li>
+										</ul>
+										<ul class="nav pt-2">
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="spinners.html">Spinners</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="media-object.html">Media Object</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="navigation.html">Navigation</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="pagination.html">Pagination</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="popover.html">Popover</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="progress.html">Progress</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="typography.html">Typography</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="tooltip.html">Tooltip</a>
+											</li>
+										</ul>
+										<ul class="nav">
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="toast.html">Toast</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="tags.html">Tags</a>
+											</li>
+											<li class="pt-2"><span>Maps</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="map-mapel.html">Mapel  Maps</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="map-vector.html">Vector Maps</a>
+											</li>
+											<li class="pt-2"><span>Tables</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="table-basic.html">Basic Tables</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="table-data.html">Data Tables</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<ul class="nav">
+											<li><span>Advanced UI</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="accordion.html">Accordion</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="carousel.html">Carousel</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="collapse.html">Collapse</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="modals.html">Modals</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="timeline.html">Timeline</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="darggablecard.html">Darggable-Cards</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="sweet-alert.html">Sweet Alert</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="rating.html">Ratings</a>
+											</li>
+										</ul>
+										<ul class="nav">
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="search.html">Search</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="userlist.html">Userlist</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="blog.html">Blog</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<ul class="nav">
+											<li><span>Chart</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-morris.html">Morris Charts</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-flot.html">Flot Charts</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-chartjs.html">ChartJS</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-spark-peity.html">Sparkline & Peity </a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-echart.html">Echart</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-receipt"></i>Forms</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-elements.html">Form Elements</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-advanced.html">Advanced Forms</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-layouts.html">Form Layouts</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-validation.html">Form Validation</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-wizards.html">Form Wizards</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-editor.html">WYSIWYG Editor</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-shield"></i>Utilities</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="background.html">Background</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="border.html">Border</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="display.html">Display</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="flex.html">Flex</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="height.html">Height</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="margin.html">Margin</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="padding.html">Padding</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="position.html">Position</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="width.html">Width</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="extras.html">Extras</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-face-smile"></i>Icons</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons.html">Font Awesome</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons2.html">Material Design Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons3.html">Simple Line Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons4.html">Feather Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons5.html">Ionic Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons6.html">Flag Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons7.html">Pe7 Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons8.html">Themify Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons9.html">Typicons Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons10.html">Weather Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons11.html">Material Icons</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-palette"></i>Pages</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="profile.html">Profile</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="invoice.html">Invoice</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="pricing.html">Pricing</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link with-sub" href="pricing.html">Alertpages</a>
+									<ul class="nav-sub">
+										<li class="nav-sub-item">
+											<a class="nav-sub-link" href="success-message.html">Success Message</a>
+										</li>
+										<li class="nav-sub-item">
+											<a class="nav-sub-link" href="danger-message.html">Danger Message</a>
+										</li>
+										<li class="nav-sub-item">
+											<a class="nav-sub-link" href="warning-message.html">Warning Message</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="gallery.html">Gallery</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="faq.html">Faqs</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="empty.html">Empty Page</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="signin.html">Sign In</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="signup.html">Sign Up</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="forgot.html">Forgot Password</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="reset.html">Reset Password</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="lockscreen.html">Lockscreen</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="underconstruction.html">UnderConstruction</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="404.html">404 Error</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="500.html">500 Error</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--End  Horizonatal menu-->
+
+			<!-- Main Content-->
+			<div class="main-content pt-0">
+
+				<div class="container">
+					<div class="inner-body">
+
+						<!-- Page Header -->
+						<div class="page-header">
+							<div>
+								<h2 class="main-content-title tx-24 mg-b-5">Simpleline Icons</h2>
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Icons</a></li>
+									<li class="breadcrumb-item"><a href="#">Simpleline Icons</a></li>
+								</ol>
+							</div>
+							<div class="d-flex">
+								<div class="justify-content-center">
+									<button type="button" class="btn btn-white btn-icon-text my-2 mr-2">
+									  <i class="fe fe-download mr-2"></i> Import
+									</button>
+									<button type="button" class="btn btn-white btn-icon-text my-2 mr-2">
+									  <i class="fe fe-filter mr-2"></i> Filter
+									</button>
+									<button type="button" class="btn btn-primary my-2 btn-icon-text">
+									  <i class="fe fe-download-cloud mr-2"></i> Download Report
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- End Page Header -->
+
+						<!-- Row-->
+						<div class="row row-sm">
+							<div class="col-md-12">
+								<div class="card custom-card">
+									<div class="card-body">
+										<div class="row row-sm">
+											<div class="col-lg-12 col-sm-12 mb-4">
+												<h3 class="main-content-label">Simpleline Icons</h3>
+												<p class="mb-2">Simply beautiful open source icons. For more info <a href="https://simplelineicons.com" target="_blank">click here</a>.</p>
+												<p><code>&lt;i class="si si-ICON_NAME"&gt;&lt;/i&gt;</code></p>
+											</div>
+											<div class="col-sm-12 col-lg-12">
+												<div class="icons-list-wrap">
+													<ul class="icons-list">
+														<li class="icons-list-item"><i class="si si-user" data-toggle="tooltip" title="si-user"></i></li>
+														<li class="icons-list-item"><i class="si si-people" data-toggle="tooltip" title="si-people"></i></li>
+														<li class="icons-list-item"><i class="si si-user-female" data-toggle="tooltip" title="si-user-female"></i></li>
+														<li class="icons-list-item"><i class="si si-user-follow" data-toggle="tooltip" title="si-user-follow"></i></li>
+														<li class="icons-list-item"><i class="si si-user-following" data-toggle="tooltip" title="si-user-following"></i></li>
+														<li class="icons-list-item"><i class="si si-user-unfollow" data-toggle="tooltip" title="si-user-unfollow"></i></li>
+														<li class="icons-list-item"><i class="si si-login" data-toggle="tooltip" title="si-login"></i></li>
+														<li class="icons-list-item"><i class="si si-logout" data-toggle="tooltip" title="si-logout"></i></li>
+														<li class="icons-list-item"><i class="si si-emotsmile" data-toggle="tooltip" title="si-emotsmile"></i></li>
+														<li class="icons-list-item"><i class="si si-phone" data-toggle="tooltip" title="si-phone"></i></li>
+														<li class="icons-list-item"><i class="si si-call-end" data-toggle="tooltip" title="si-call-end"></i></li>
+														<li class="icons-list-item"><i class="si si-call-in" data-toggle="tooltip" title="si-call-in"></i></li>
+														<li class="icons-list-item"><i class="si si-call-out" data-toggle="tooltip" title="si-call-out"></i></li>
+														<li class="icons-list-item"><i class="si si-map" data-toggle="tooltip" title="si-map"></i></li>
+														<li class="icons-list-item"><i class="si si-location-pin" data-toggle="tooltip" title="si-location-pin"></i></li>
+														<li class="icons-list-item"><i class="si si-direction" data-toggle="tooltip" title="si-direction"></i></li>
+														<li class="icons-list-item"><i class="si si-directions" data-toggle="tooltip" title="si-directions"></i></li>
+														<li class="icons-list-item"><i class="si si-compass" data-toggle="tooltip" title="si-compass"></i></li>
+														<li class="icons-list-item"><i class="si si-layers" data-toggle="tooltip" title="si-layers"></i></li>
+														<li class="icons-list-item"><i class="si si-menu" data-toggle="tooltip" title="si-menu"></i></li>
+														<li class="icons-list-item"><i class="si si-list" data-toggle="tooltip" title="si-list"></i></li>
+														<li class="icons-list-item"><i class="si si-options-vertical" data-toggle="tooltip" title="si-options-vertical"></i></li>
+														<li class="icons-list-item"><i class="si si-options" data-toggle="tooltip" title="si-options"></i></li>
+														<li class="icons-list-item"><i class="si si-arrow-down" data-toggle="tooltip" title="si-arrow-down"></i></li>
+														<li class="icons-list-item"><i class="si si-arrow-left" data-toggle="tooltip" title="si-arrow-left"></i></li>
+														<li class="icons-list-item"><i class="si si-arrow-right" data-toggle="tooltip" title="si-arrow-right"></i></li>
+														<li class="icons-list-item"><i class="si si-arrow-up" data-toggle="tooltip" title="si-arrow-up"></i></li>
+														<li class="icons-list-item"><i class="si si-arrow-up-circle" data-toggle="tooltip" title="si-arrow-up-circle"></i></li>
+														<li class="icons-list-item"><i class="si si-arrow-left-circle" data-toggle="tooltip" title="si-arrow-left-circle"></i></li>
+														<li class="icons-list-item"><i class="si si-arrow-right-circle" data-toggle="tooltip" title="si-arrow-right-circle"></i></li>
+														<li class="icons-list-item"><i class="si si-arrow-down-circle" data-toggle="tooltip" title="si-arrow-down-circle"></i></li>
+														<li class="icons-list-item"><i class="si si-check" data-toggle="tooltip" title="si-check"></i></li>
+														<li class="icons-list-item"><i class="si si-clock" data-toggle="tooltip" title="si-clock"></i></li>
+														<li class="icons-list-item"><i class="si si-plus" data-toggle="tooltip" title="si-plus"></i></li>
+														<li class="icons-list-item"><i class="si si-minus" data-toggle="tooltip" title="si-minus"></i></li>
+														<li class="icons-list-item"><i class="si si-close" data-toggle="tooltip" title="si-close"></i></li>
+														<li class="icons-list-item"><i class="si si-event" data-toggle="tooltip" title="si-event"></i></li>
+														<li class="icons-list-item"><i class="si si-exclamation" data-toggle="tooltip" title="si-exclamation"></i></li>
+														<li class="icons-list-item"><i class="si si-organization" data-toggle="tooltip" title="si-organization"></i></li>
+														<li class="icons-list-item"><i class="si si-trophy" data-toggle="tooltip" title="si-trophy"></i></li>
+														<li class="icons-list-item"><i class="si si-screen-smartphone" data-toggle="tooltip" title="si-screen-smartphone"></i></li>
+														<li class="icons-list-item"><i class="si si-screen-desktop" data-toggle="tooltip" title="si-screen-desktop"></i></li>
+														<li class="icons-list-item"><i class="si si-plane" data-toggle="tooltip" title="si-plane"></i></li>
+														<li class="icons-list-item"><i class="si si-notebook" data-toggle="tooltip" title="si-notebook"></i></li>
+														<li class="icons-list-item"><i class="si si-mustache" data-toggle="tooltip" title="si-mustache"></i></li>
+														<li class="icons-list-item"><i class="si si-mouse" data-toggle="tooltip" title="si-mouse"></i></li>
+														<li class="icons-list-item"><i class="si si-magnet" data-toggle="tooltip" title="si-magnet"></i></li>
+														<li class="icons-list-item"><i class="si si-energy" data-toggle="tooltip" title="si-energy"></i></li>
+														<li class="icons-list-item"><i class="si si-disc" data-toggle="tooltip" title="si-disc"></i></li>
+														<li class="icons-list-item"><i class="si si-cursor" data-toggle="tooltip" title="si-cursor"></i></li>
+														<li class="icons-list-item"><i class="si si-cursor-move" data-toggle="tooltip" title="si-cursor-move"></i></li>
+														<li class="icons-list-item"><i class="si si-crop" data-toggle="tooltip" title="si-crop"></i></li>
+														<li class="icons-list-item"><i class="si si-chemistry" data-toggle="tooltip" title="si-chemistry"></i></li>
+														<li class="icons-list-item"><i class="si si-speedometer" data-toggle="tooltip" title="si-speedometer"></i></li>
+														<li class="icons-list-item"><i class="si si-shield" data-toggle="tooltip" title="si-shield"></i></li>
+														<li class="icons-list-item"><i class="si si-screen-tablet" data-toggle="tooltip" title="si-screen-tablet"></i></li>
+														<li class="icons-list-item"><i class="si si-magic-wand" data-toggle="tooltip" title="si-magic-wand"></i></li>
+														<li class="icons-list-item"><i class="si si-hourglass" data-toggle="tooltip" title="si-hourglass"></i></li>
+														<li class="icons-list-item"><i class="si si-graduation" data-toggle="tooltip" title="si-graduation"></i></li>
+														<li class="icons-list-item"><i class="si si-ghost" data-toggle="tooltip" title="si-ghost"></i></li>
+														<li class="icons-list-item"><i class="si si-game-controller" data-toggle="tooltip" title="si-game-controller"></i></li>
+														<li class="icons-list-item"><i class="si si-fire" data-toggle="tooltip" title="si-fire"></i></li>
+														<li class="icons-list-item"><i class="si si-eyeglass" data-toggle="tooltip" title="si-eyeglass"></i></li>
+														<li class="icons-list-item"><i class="si si-envelope-open" data-toggle="tooltip" title="si-envelope-open"></i></li>
+														<li class="icons-list-item"><i class="si si-envelope-letter" data-toggle="tooltip" title="si-envelope-letter"></i></li>
+														<li class="icons-list-item"><i class="si si-bell" data-toggle="tooltip" title="si-bell"></i></li>
+														<li class="icons-list-item"><i class="si si-badge" data-toggle="tooltip" title="si-badge"></i></li>
+														<li class="icons-list-item"><i class="si si-anchor" data-toggle="tooltip" title="si-anchor"></i></li>
+														<li class="icons-list-item"><i class="si si-wallet" data-toggle="tooltip" title="si-wallet"></i></li>
+														<li class="icons-list-item"><i class="si si-vector" data-toggle="tooltip" title="si-vector"></i></li>
+														<li class="icons-list-item"><i class="si si-speech" data-toggle="tooltip" title="si-speech"></i></li>
+														<li class="icons-list-item"><i class="si si-puzzle" data-toggle="tooltip" title="si-puzzle"></i></li>
+														<li class="icons-list-item"><i class="si si-printer" data-toggle="tooltip" title="si-printer"></i></li>
+														<li class="icons-list-item"><i class="si si-present" data-toggle="tooltip" title="si-present"></i></li>
+														<li class="icons-list-item"><i class="si si-playlist" data-toggle="tooltip" title="si-playlist"></i></li>
+														<li class="icons-list-item"><i class="si si-pin" data-toggle="tooltip" title="si-pin"></i></li>
+														<li class="icons-list-item"><i class="si si-picture" data-toggle="tooltip" title="si-picture"></i></li>
+														<li class="icons-list-item"><i class="si si-handbag" data-toggle="tooltip" title="si-handbag"></i></li>
+														<li class="icons-list-item"><i class="si si-globe-alt" data-toggle="tooltip" title="si-globe-alt"></i></li>
+														<li class="icons-list-item"><i class="si si-globe" data-toggle="tooltip" title="si-globe"></i></li>
+														<li class="icons-list-item"><i class="si si-folder-alt" data-toggle="tooltip" title="si-folder-alt"></i></li>
+														<li class="icons-list-item"><i class="si si-folder" data-toggle="tooltip" title="si-folder"></i></li>
+														<li class="icons-list-item"><i class="si si-film" data-toggle="tooltip" title="si-film"></i></li>
+														<li class="icons-list-item"><i class="si si-feed" data-toggle="tooltip" title="si-feed"></i></li>
+														<li class="icons-list-item"><i class="si si-drop" data-toggle="tooltip" title="si-drop"></i></li>
+														<li class="icons-list-item"><i class="si si-drawer" data-toggle="tooltip" title="si-drawer"></i></li>
+														<li class="icons-list-item"><i class="si si-docs" data-toggle="tooltip" title="si-docs"></i></li>
+														<li class="icons-list-item"><i class="si si-doc" data-toggle="tooltip" title="si-doc"></i></li>
+														<li class="icons-list-item"><i class="si si-diamond" data-toggle="tooltip" title="si-diamond"></i></li>
+														<li class="icons-list-item"><i class="si si-cup" data-toggle="tooltip" title="si-cup"></i></li>
+														<li class="icons-list-item"><i class="si si-calculator" data-toggle="tooltip" title="si-calculator"></i></li>
+														<li class="icons-list-item"><i class="si si-bubbles" data-toggle="tooltip" title="si-bubbles"></i></li>
+														<li class="icons-list-item"><i class="si si-briefcase" data-toggle="tooltip" title="si-briefcase"></i></li>
+														<li class="icons-list-item"><i class="si si-book-open" data-toggle="tooltip" title="si-book-open"></i></li>
+														<li class="icons-list-item"><i class="si si-basket-loaded" data-toggle="tooltip" title="si-basket-loaded"></i></li>
+														<li class="icons-list-item"><i class="si si-basket" data-toggle="tooltip" title="si-basket"></i></li>
+														<li class="icons-list-item"><i class="si si-bag" data-toggle="tooltip" title="si-bag"></i></li>
+														<li class="icons-list-item"><i class="si si-action-undo" data-toggle="tooltip" title="si-action-undo"></i></li>
+														<li class="icons-list-item"><i class="si si-action-redo" data-toggle="tooltip" title="si-action-redo"></i></li>
+														<li class="icons-list-item"><i class="si si-wrench" data-toggle="tooltip" title="si-wrench"></i></li>
+														<li class="icons-list-item"><i class="si si-umbrella" data-toggle="tooltip" title="si-umbrella"></i></li>
+														<li class="icons-list-item"><i class="si si-trash" data-toggle="tooltip" title="si-trash"></i></li>
+														<li class="icons-list-item"><i class="si si-tag" data-toggle="tooltip" title="si-tag"></i></li>
+														<li class="icons-list-item"><i class="si si-support" data-toggle="tooltip" title="si-support"></i></li>
+														<li class="icons-list-item"><i class="si si-frame" data-toggle="tooltip" title="si-frame"></i></li>
+														<li class="icons-list-item"><i class="si si-size-fullscreen" data-toggle="tooltip" title="si-size-fullscreen"></i></li>
+														<li class="icons-list-item"><i class="si si-size-actual" data-toggle="tooltip" title="si-size-actual"></i></li>
+														<li class="icons-list-item"><i class="si si-shuffle" data-toggle="tooltip" title="si-shuffle"></i></li>
+														<li class="icons-list-item"><i class="si si-share-alt" data-toggle="tooltip" title="si-share-alt"></i></li>
+														<li class="icons-list-item"><i class="si si-share" data-toggle="tooltip" title="si-share"></i></li>
+														<li class="icons-list-item"><i class="si si-rocket" data-toggle="tooltip" title="si-rocket"></i></li>
+														<li class="icons-list-item"><i class="si si-question" data-toggle="tooltip" title="si-question"></i></li>
+														<li class="icons-list-item"><i class="si si-pie-chart" data-toggle="tooltip" title="si-pie-chart"></i></li>
+														<li class="icons-list-item"><i class="si si-pencil" data-toggle="tooltip" title="si-pencil"></i></li>
+														<li class="icons-list-item"><i class="si si-note" data-toggle="tooltip" title="si-note"></i></li>
+														<li class="icons-list-item"><i class="si si-loop" data-toggle="tooltip" title="si-loop"></i></li>
+														<li class="icons-list-item"><i class="si si-home" data-toggle="tooltip" title="si-home"></i></li>
+														<li class="icons-list-item"><i class="si si-grid" data-toggle="tooltip" title="si-grid"></i></li>
+														<li class="icons-list-item"><i class="si si-graph" data-toggle="tooltip" title="si-graph"></i></li>
+														<li class="icons-list-item"><i class="si si-microphone" data-toggle="tooltip" title="si-microphone"></i></li>
+														<li class="icons-list-item"><i class="si si-music-tone-alt" data-toggle="tooltip" title="si-music-tone-alt"></i></li>
+														<li class="icons-list-item"><i class="si si-music-tone" data-toggle="tooltip" title="si-music-tone"></i></li>
+														<li class="icons-list-item"><i class="si si-earphones-alt" data-toggle="tooltip" title="si-earphones-alt"></i></li>
+														<li class="icons-list-item"><i class="si si-earphones" data-toggle="tooltip" title="si-earphones"></i></li>
+														<li class="icons-list-item"><i class="si si-equalizer" data-toggle="tooltip" title="si-equalizer"></i></li>
+														<li class="icons-list-item"><i class="si si-like" data-toggle="tooltip" title="si-like"></i></li>
+														<li class="icons-list-item"><i class="si si-dislike" data-toggle="tooltip" title="si-dislike"></i></li>
+														<li class="icons-list-item"><i class="si si-control-start" data-toggle="tooltip" title="si-control-start"></i></li>
+														<li class="icons-list-item"><i class="si si-control-rewind" data-toggle="tooltip" title="si-control-rewind"></i></li>
+														<li class="icons-list-item"><i class="si si-control-play" data-toggle="tooltip" title="si-control-play"></i></li>
+														<li class="icons-list-item"><i class="si si-control-pause" data-toggle="tooltip" title="si-control-pause"></i></li>
+														<li class="icons-list-item"><i class="si si-control-forward" data-toggle="tooltip" title="si-control-forward"></i></li>
+														<li class="icons-list-item"><i class="si si-control-end" data-toggle="tooltip" title="si-control-end"></i></li>
+														<li class="icons-list-item"><i class="si si-volume-1" data-toggle="tooltip" title="si-volume-1"></i></li>
+														<li class="icons-list-item"><i class="si si-volume-2" data-toggle="tooltip" title="si-volume-2"></i></li>
+														<li class="icons-list-item"><i class="si si-volume-off" data-toggle="tooltip" title="si-volume-off"></i></li>
+														<li class="icons-list-item"><i class="si si-calendar" data-toggle="tooltip" title="si-calendar"></i></li>
+														<li class="icons-list-item"><i class="si si-bulb" data-toggle="tooltip" title="si-bulb"></i></li>
+														<li class="icons-list-item"><i class="si si-chart" data-toggle="tooltip" title="si-chart"></i></li>
+														<li class="icons-list-item"><i class="si si-ban" data-toggle="tooltip" title="si-ban"></i></li>
+														<li class="icons-list-item"><i class="si si-bubble" data-toggle="tooltip" title="si-bubble"></i></li>
+														<li class="icons-list-item"><i class="si si-camrecorder" data-toggle="tooltip" title="si-camrecorder"></i></li>
+														<li class="icons-list-item"><i class="si si-camera" data-toggle="tooltip" title="si-camera"></i></li>
+														<li class="icons-list-item"><i class="si si-cloud-download" data-toggle="tooltip" title="si-cloud-download"></i></li>
+														<li class="icons-list-item"><i class="si si-cloud-upload" data-toggle="tooltip" title="si-cloud-upload"></i></li>
+														<li class="icons-list-item"><i class="si si-envelope" data-toggle="tooltip" title="si-envelope"></i></li>
+														<li class="icons-list-item"><i class="si si-eye" data-toggle="tooltip" title="si-eye"></i></li>
+														<li class="icons-list-item"><i class="si si-flag" data-toggle="tooltip" title="si-flag"></i></li>
+														<li class="icons-list-item"><i class="si si-heart" data-toggle="tooltip" title="si-heart"></i></li>
+														<li class="icons-list-item"><i class="si si-info" data-toggle="tooltip" title="si-info"></i></li>
+														<li class="icons-list-item"><i class="si si-key" data-toggle="tooltip" title="si-key"></i></li>
+														<li class="icons-list-item"><i class="si si-link" data-toggle="tooltip" title="si-link"></i></li>
+														<li class="icons-list-item"><i class="si si-lock" data-toggle="tooltip" title="si-lock"></i></li>
+														<li class="icons-list-item"><i class="si si-lock-open" data-toggle="tooltip" title="si-lock-open"></i></li>
+														<li class="icons-list-item"><i class="si si-magnifier" data-toggle="tooltip" title="si-magnifier"></i></li>
+														<li class="icons-list-item"><i class="si si-magnifier-add" data-toggle="tooltip" title="si-magnifier-add"></i></li>
+														<li class="icons-list-item"><i class="si si-magnifier-remove" data-toggle="tooltip" title="si-magnifier-remove"></i></li>
+														<li class="icons-list-item"><i class="si si-paper-clip" data-toggle="tooltip" title="si-paper-clip"></i></li>
+														<li class="icons-list-item"><i class="si si-paper-plane" data-toggle="tooltip" title="si-paper-plane"></i></li>
+														<li class="icons-list-item"><i class="si si-power" data-toggle="tooltip" title="si-power"></i></li>
+														<li class="icons-list-item"><i class="si si-refresh" data-toggle="tooltip" title="si-refresh"></i></li>
+														<li class="icons-list-item"><i class="si si-reload" data-toggle="tooltip" title="si-reload"></i></li>
+														<li class="icons-list-item"><i class="si si-settings" data-toggle="tooltip" title="si-settings"></i></li>
+														<li class="icons-list-item"><i class="si si-star" data-toggle="tooltip" title="si-star"></i></li>
+														<li class="icons-list-item"><i class="si si-symbol-female" data-toggle="tooltip" title="si-symbol-female"></i></li>
+														<li class="icons-list-item"><i class="si si-symbol-male" data-toggle="tooltip" title="si-symbol-male"></i></li>
+														<li class="icons-list-item"><i class="si si-target" data-toggle="tooltip" title="si-target"></i></li>
+														<li class="icons-list-item"><i class="si si-credit-card" data-toggle="tooltip" title="si-credit-card"></i></li>
+														<li class="icons-list-item"><i class="si si-paypal" data-toggle="tooltip" title="si-paypal"></i></li>
+														<li class="icons-list-item"><i class="si si-social-tumblr" data-toggle="tooltip" title="si-social-tumblr"></i></li>
+														<li class="icons-list-item"><i class="si si-social-twitter" data-toggle="tooltip" title="si-social-twitter"></i></li>
+														<li class="icons-list-item"><i class="si si-social-facebook" data-toggle="tooltip" title="si-social-facebook"></i></li>
+														<li class="icons-list-item"><i class="si si-social-instagram" data-toggle="tooltip" title="si-social-instagram"></i></li>
+														<li class="icons-list-item"><i class="si si-social-linkedin" data-toggle="tooltip" title="si-social-linkedin"></i></li>
+														<li class="icons-list-item"><i class="si si-social-pinterest" data-toggle="tooltip" title="si-social-pinterest"></i></li>
+														<li class="icons-list-item"><i class="si si-social-github" data-toggle="tooltip" title="si-social-github"></i></li>
+														<li class="icons-list-item"><i class="si si-social-google" data-toggle="tooltip" title="si-social-google"></i></li>
+														<li class="icons-list-item"><i class="si si-social-reddit" data-toggle="tooltip" title="si-social-reddit"></i></li>
+														<li class="icons-list-item"><i class="si si-social-skype" data-toggle="tooltip" title="si-social-skype"></i></li>
+														<li class="icons-list-item"><i class="si si-social-dribbble" data-toggle="tooltip" title="si-social-dribbble"></i></li>
+														<li class="icons-list-item"><i class="si si-social-behance" data-toggle="tooltip" title="si-social-behance"></i></li>
+														<li class="icons-list-item"><i class="si si-social-foursqare" data-toggle="tooltip" title="si-social-foursqare"></i></li>
+														<li class="icons-list-item"><i class="si si-social-soundcloud" data-toggle="tooltip" title="si-social-soundcloud"></i></li>
+														<li class="icons-list-item"><i class="si si-social-spotify" data-toggle="tooltip" title="si-social-spotify"></i></li>
+														<li class="icons-list-item"><i class="si si-social-stumbleupon" data-toggle="tooltip" title="si-social-stumbleupon"></i></li>
+														<li class="icons-list-item"><i class="si si-social-youtube" data-toggle="tooltip" title="si-social-youtube"></i></li>
+														<li class="icons-list-item"><i class="si si-social-dropbox" data-toggle="tooltip" title="si-social-dropbox"></i></li>
+														<li class="icons-list-item"><i class="si si-social-vkontakte" data-toggle="tooltip" title="si-social-vkontakte"></i></li>
+														<li class="icons-list-item"><i class="si si-social-steam" data-toggle="tooltip" title="si-social-steam"></i></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Row-->
+				</div>
+			</div>
+			<!-- End Main Content-->
+
+			<!-- Main Footer-->
+			<div class="main-footer text-center">
+				<div class="container">
+					<div class="row row-sm">
+						<div class="col-md-12">
+							<span>Copyright © 2021 <a href="#">Spruha</a>. Designed by <a href="https://www.spruko.com/">Spruko</a> All rights reserved.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End Footer-->
+
+			<!-- Sidebar -->
+			<div class="sidebar sidebar-right sidebar-animate">
+				<div class="sidebar-icon">
+					<a href="#" class="text-right float-right text-dark fs-20" data-toggle="sidebar-right" data-target=".sidebar-right"><i class="fe fe-x"></i></a>
+				</div>
+				<div class="sidebar-body">
+					<h5>Todo</h5>
+					<div class="d-flex p-3">
+						<label class="ckbox"><input checked  type="checkbox"><span>Hangout With friends</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input checked type="checkbox"><span>System Updated</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input type="checkbox"><span>Do something more</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input  type="checkbox"><span>System Updated</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input  type="checkbox"><span>Find an Idea</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top mb-0">
+						<label class="ckbox"><input  type="checkbox"><span>Project review</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<h5>Overview</h5>
+					<div class="p-4">
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>Founder &amp; CEO</span> <span>24</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-xs wd-20p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>UX Designer</span> <span>1</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" class="progress-bar progress-bar-xs bg-secondary wd-15p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>Recruitment</span> <span>87</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="45" class="progress-bar progress-bar-xs bg-success wd-45p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>Software Engineer</span> <span>32</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar progress-bar-xs bg-info wd-25p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>Project Manager</span> <span>32</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar progress-bar-xs bg-danger wd-25p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Sidebar -->
+
+		</div>
+		<!-- End Page -->
+
+		<!-- Back-to-top -->
+		<a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
+
+		<!-- Jquery js-->
+		<script src="../../assets/plugins/jquery/jquery.min.js"></script>
+
+		<!-- Bootstrap js-->
+		<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+		<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Jquery-Ui js-->
+		<script src="../../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+
+		<!-- Select2 js-->
+		<script src="../../assets/plugins/select2/js/select2.min.js"></script>
+
+		<!-- MutipleSelect js-->
+		<script src="../../assets/plugins/multipleselect/multiple-select.js"></script>
+		<script src="../../assets/plugins/multipleselect/multi-select.js"></script>
+
+		<!-- Perfect-scrollbar js -->
+		<script src="../../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+		<!-- Sidebar js -->
+		<script src="../../assets/plugins/sidebar/sidebar.js"></script>
+
+		<!-- Sticky js -->
+		<script src="../../assets/js/sticky.js"></script>
+
+		<!-- Custom js -->
+		<script src="../../assets/js/custom.js"></script>
+
+	</body>
+</html>

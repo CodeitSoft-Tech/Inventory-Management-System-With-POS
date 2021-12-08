@@ -1,0 +1,188 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project        :   SPRUHA - HTML5 Bootstrap Admin Template
+Version        :   V.1
+Create Date    :   03/10/20
+Copyright      :   Spruko Technologies Private Limited 
+Author         :   SprukoSoft
+Author URL     :   https://themeforest.net/user/sprukosoft
+Support	       :   support@spruko.com
+License        :   Licensed under ThemeForest License
+
+-------------------------------------------------------------------*/
+
+/*
+1.	Bootstrap-custom
+2.	Accordions
+3.	Alerts
+4.	Badges
+5.	Breadcrumbs
+6.	Buttons
+7.	Cards
+8.	Carousel
+9.	Dropdown
+10.	Forms
+11.	Grid
+12.	Input-group
+13.	Modals
+14.	Navigation
+15.	Pagination
+16.	Popover
+17.	Progress
+18.	Tables
+19.	Datatable
+20.	Toast
+21.	Tooltip
+22.	Color
+23.	Main-content
+24.	Header
+25.	Footer
+26.	Sidebar
+27.	Right-sidebar
+28.	Profile
+29.	Iconbar
+30.	Datepicker
+31.	Datetimepicker
+32.	Jqvmap
+33.	Chart
+34.	Parsely
+35.	Quill
+36.	Rangeslider
+37.	Select2
+38.	Spectrum
+39.	Calendar
+40.	Chat
+41.	Contacts
+42.	Error
+43.	Invoice
+44.	Mail
+45.	Profile
+46.	Account-setting
+47.	Pricing
+48.	Scrumboard
+49.	Todotask
+50.	Product-list
+51.	Whishlist
+52.	Border
+53.	Height
+54.	Margin
+55.	Opacity
+56.	Padding
+57.	Position
+58.	Typography
+59.	Width
+60.	Tags
+61.	Tabs
+62.	Navbar
+63.	Wizard
+64.	P-scroll
+65.	Radio
+66.	Rating
+67.	Timeline
+68.	Countdown
+69.	Image
+70.	List
+71.	Checkbox
+72.	Toggle
+73.	Listgroup
+74.	Jumborton
+75.	Custom-control
+76.	Element-sizes
+77.	Custom-styles
+*/
+
+@import "custom/fonts/_fonts.scss";
+@import "variables";
+
+/* ########## BOOTSTRAP OVERRIDES ########## */
+
+@import "bootstrap/bootstrap-custom";
+@import "bootstrap/accordions";
+@import "bootstrap/alerts";
+@import "bootstrap/badges";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/buttons";
+@import "bootstrap/cards";
+@import "bootstrap/carousel";
+@import "bootstrap/dropdown";
+@import "bootstrap/forms";
+@import "bootstrap/grid";
+@import "bootstrap/input-group";
+@import "bootstrap/modals";
+@import "bootstrap/navigation";
+@import "bootstrap/pagination";
+@import "bootstrap/popover";
+@import "bootstrap/progress";
+@import "bootstrap/tables";
+@import "bootstrap/datatable";
+@import "bootstrap/toast";
+@import "bootstrap/tooltip";
+
+
+/* ########## LAYOUTS  ########## */
+
+@import "layouts/main-content";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/right-sidebar";
+@import "layouts/profile";
+@import "layouts/iconbar";
+
+
+/* ############### CUSTOM VENDOR STYLES ############### */
+@import "lib/datepicker";
+@import "lib/datetimepicker";
+@import "lib/jqvmap";
+@import "lib/chart";
+@import "lib/parsely";
+@import "lib/quill";
+@import "lib/rangeslider";
+@import "lib/select2";
+@import "lib/spectrum";
+@import "lib/spinner";
+
+/* ############### TEMPLATE STYLES ############### */
+@import "template/calendar";
+@import "template/chat";
+@import "template/contacts";
+@import "template/error";
+@import "template/invoice";
+@import "template/mail";
+@import "template/profile";
+@import "template/cryptocurrency";
+@import "template/ecommerce-pages";
+
+
+/* ############### UTILITIES/HELPER CLASSES ############### */
+@import "util/background";
+@import "util/display";
+@import "util/flex";
+@import "util/border";
+@import "util/height";
+@import "util/margin";
+@import "util/opacity";
+@import "util/padding";
+@import "util/position";
+@import "util/typography";
+@import "util/width";
+
+
+/* ############### CUSTOM ELEMENT STYLES ############### */
+@import "custom/component-cols";
+@import "custom/tags";
+@import "custom/tabs";
+@import "custom/navbar";
+@import "custom/wizard";
+@import "custom/p-scroll";
+@import "custom/radio";
+@import "custom/rating";
+@import "custom/timeline";
+@import "custom/image";
+@import "custom/list";
+@import "custom/checkbox";
+@import "custom/toggle";
+@import "custom/listgroup";
+@import "custom/jumborton";
+@import "custom/custom-control";
+@import "custom/custom-styles";

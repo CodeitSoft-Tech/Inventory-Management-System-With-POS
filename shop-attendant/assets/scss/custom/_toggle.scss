@@ -1,0 +1,70 @@
+/* ###### Toggle ###### */
+
+.main-toggle {
+  width: 60px;
+  height: 25px;
+  background-color: #b4bdce;
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    display: block;
+    width: 20px;
+    background-color: $white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &::before, &::after {
+      position: absolute;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      color: $white;
+      top: 2px;
+      line-height: 1.38;
+    }
+
+    &::before {
+      content: 'on';
+      left: -25px;
+    }
+
+    &::after {
+      content: 'off';
+      right: -29px;
+    }
+  }
+
+  &.on {
+
+    span {
+      left: 37px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .main-toggle span {
+    transition: none;
+  }
+}
+
+.main-toggle-secondary.on {
+  background-color: $secondary;
+}
+
+.main-toggle-success.on {
+  background-color: $success;
+}
+
+.main-toggle-dark.on {
+  background-color: #8f9cc0;
+}
+
+/* ###### Toggle ###### */

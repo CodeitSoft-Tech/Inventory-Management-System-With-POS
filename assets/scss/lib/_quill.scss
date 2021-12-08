@@ -1,0 +1,296 @@
+/* ###### Quill ###### */
+
+.ql-wrapper-demo {
+  background-color: $white;
+
+  .ql-container {
+    height: 250px;
+  }
+
+  .ql-editor {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ql-wrapper-demo {
+    width: 70%;
+  }
+}
+
+.ql-scrolling-demo {
+  background-color: $white;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid #e8e8f7;
+  position: relative;
+
+  .ql-container {
+    border-width: 0;
+    height: auto;
+    min-height: 100%;
+    padding: 30px;
+
+    .ql-editor {
+      font-size: 16px;
+      overflow-y: visible;
+      color: $dark;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ql-scrolling-demo {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ql-scrolling-demo .ql-container {
+    padding: 50px;
+    padding-left: 35px;
+  }
+}
+
+.ql-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.ql-wrapper-modal .ql-snow {
+  &.ql-toolbar {
+    border-width: 0;
+    border-bottom-width: 1px;
+  }
+
+  &.ql-container {
+    border-width: 0;
+  }
+
+  .ql-editor {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .ql-wrapper-modal .ql-snow.ql-toolbar {
+    padding: 15px 20px;
+  }
+}
+
+.ql-bubble {
+  &.ql-container {
+    &:not(.ql-disabled) a::before {
+      background-color: #8f9cc0;
+      border-radius: 2px;
+    }
+  }
+
+  .ql-tooltip {
+    background-color: #8f9cc0;
+    border-radius: 2px;
+
+    &.ql-flip .ql-tooltip-arrow {
+      border-top-color: #8f9cc0;
+    }
+
+    &:not(.ql-flip) .ql-tooltip-arrow {
+      border-bottom-color: #8f9cc0;
+    }
+  }
+
+  .ql-toolbar {
+    padding: 0 8px 8px;
+
+    button {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8896af;
+      outline: none;
+
+      i {
+        font-size: 24px;
+        line-height: 0;
+        display: inline-block;
+
+        &.la-bold, &.la-underline {
+          width: 21px;
+        }
+      }
+
+      .ql-fill {
+        fill: #8896af;
+      }
+
+      .ql-stroke {
+        stroke: #8896af;
+      }
+
+      &.ql-active {
+        color: $white;
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+    }
+
+    .ql-formats {
+      margin: 8px 8px 0 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .ql-bubble .ql-toolbar .ql-formats {
+    margin: 8px 0 0;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.ql-snow {
+  &.ql-container {
+    border-color: $background;
+    border-width: 1px;
+  }
+
+  &.ql-toolbar {
+    border-width: 1px;
+    border-color: $background;
+    border-bottom-width: 1px;
+    padding: 5px 10px 10px;
+
+    .ql-picker-label {
+      border-color: $background;
+
+      &.ql-active {
+        background-color: $background;
+        border-color: transparent;
+        color: #8f9cc0;
+        font-weight: 500;
+
+        .ql-stroke {
+          stroke: $black;
+        }
+      }
+    }
+
+    button {
+      border: 1px solid transparent;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8f9cc0;
+      outline: none;
+
+      svg {
+        width: 20px;
+        float: none;
+      }
+
+      i {
+        font-size: 18px;
+        line-height: 0;
+        display: inline-block;
+
+        &.la-bold, &.la-underline {
+          width: 21px;
+        }
+      }
+
+      .ql-stroke {
+        stroke-width: 2px;
+      }
+
+      &:hover, &:focus {
+        border-color: $background;
+      }
+
+      &:hover .ql-stroke, &:focus .ql-stroke {
+        stroke: #a8afc7;
+      }
+
+      &.ql-active {
+        background-color: $background;
+        color: $dark;
+        border-color: transparent;
+
+        .ql-fill {
+          fill: $dark;
+        }
+
+        .ql-stroke {
+          stroke: $dark;
+        }
+      }
+    }
+
+    .ql-formats {
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  .ql-formats button + button {
+    margin: 0 0 0 2px;
+  }
+
+  .ql-picker {
+    display: block;
+    border-width: 0;
+    height: 32px;
+    color: #3c4858;
+
+    &:not(.ql-color-picker):not(.ql-icon-picker) svg {
+      right: 3px;
+    }
+
+    &:hover .ql-picker-label, &:focus .ql-picker-label {
+      color: #8f9cc0;
+    }
+
+    &:hover .ql-picker-label .ql-stroke, &:focus .ql-picker-label .ql-stroke {
+      stroke: $black;
+    }
+  }
+
+  .ql-picker-label {
+    display: block;
+    padding-left: 10px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border: 1px solid #e8e8f7;
+    background-color: $white;
+    outline: none;
+
+    &::before {
+      line-height: 2.25;
+      font-weight: 400;
+    }
+  }
+
+  .ql-stroke {
+    stroke: $black;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+    stroke-width: 1;
+  }
+
+  .ql-editor {
+    padding: 20px;
+    color: $dark;
+  }
+}
+
+/* ###### Quill ###### */

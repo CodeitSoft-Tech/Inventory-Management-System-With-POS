@@ -1,0 +1,213 @@
+/*Color variables*/
+/*gray variables*/
+/*white variables*/
+/*black variables*/
+/*color1*/
+/*color2*/
+/*color3*/
+/*color4*/
+/*color5*/
+ul.resp-tabs-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.resp-tabs-list li {
+  font-weight: 900;
+  font-size: 19px;
+  display: inline-block;
+  padding: 12px 22px;
+  margin: 0 0 0 4px;
+  list-style: none;
+  cursor: pointer;
+  float: right;
+}
+
+.resp-tabs-container {
+  padding: 0px;
+  background-color: transparent;
+  clear: right;
+  display: block;
+}
+
+.resp-tab-content {
+  display: none;
+  padding: 20px 15px 0 15px;
+  padding-bottom: 0;
+  border: 1px solid #c1c1c1;
+  border-top-color: #8645ff;
+}
+
+.resp-tab-active {
+  border: 1px solid #8645ff !important;
+  border-bottom: none;
+  margin-bottom: 0px !important;
+  padding: 12px 14px 14px 14px !important;
+  border-bottom: 0 !important;
+  border-bottom: none;
+  background-color: #fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+  display: block;
+}
+
+h2.resp-accordion {
+  font-size: 13px;
+  border: 1px solid #c1c1c1;
+  border-top: 0px solid #c1c1c1;
+  margin: 0px;
+  padding: 10px 15px;
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+}
+
+h2.resp-tab-active {
+  border-bottom: 0px solid #c1c1c1 !important;
+  margin-bottom: 0px !important;
+  padding: 10px 15px !important;
+  background: #DBDBDB;
+}
+
+h2.resp-tab-active span.resp-arrow {
+  border: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #9B9797;
+}
+
+h2.resp-tab-title:last-child {
+  border-bottom: 12px solid #c1c1c1 !important;
+  background: blue;
+}
+
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+  float: none;
+  margin-top: 0 !important;
+  color: #fff;
+}
+
+.resp-vtabs .resp-tabs-list li {
+  display: block;
+  padding: 14px !important;
+  margin: 0 0 4px;
+  cursor: pointer;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0;
+}
+
+.resp-vtabs .resp-tabs-container {
+  padding: 0px;
+  background-color: transparent;
+  clear: none;
+  border-bottom: 0 !important;
+}
+
+.resp-vtabs .resp-tab-content {
+  border: none;
+  word-wrap: break-word;
+  height: 100%;
+}
+
+.resp-vtabs li.resp-tab-active {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid;
+  border-left: 0 !important;
+}
+
+.first-sidemenu li {
+  color: #ffff;
+}
+
+.first-sidemenu li.active {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.first-sidemenu li:hover {
+  border-left: 0 !important;
+  color: #fff;
+}
+
+.resp-vtabs .resp-tab-active:hover {
+  fill: #fff;
+}
+
+.resp-arrow {
+  width: 0;
+  height: 0;
+  float: left;
+  margin-top: 3px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #c1c1c1;
+}
+
+/*-----------Accordion styles-----------*/
+.resp-easy-accordion h2.resp-accordion {
+  display: block;
+}
+
+.resp-easy-accordion .resp-tab-content {
+  border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+  border-bottom: 1px solid #c1c1c1;
+  /* !important;*/
+}
+
+.resp-jfit {
+  width: 100%;
+  margin: 0px;
+}
+
+.resp-tab-content-active {
+  display: block !important;
+}
+
+h2.resp-accordion:first-child {
+  border-top: 1px solid #c1c1c1;
+  /* !important;*/
+}
+
+.banner .w-95 {
+  width: 250px !important;
+}
+
+.dark-theme .resp-vtabs .resp-tabs-list li {
+  border-left: 1px solid #303454 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+}
+
+.leftmenu-light.dark-theme .resp-vtabs .resp-tabs-list li {
+  border-left: 1px solid  #eff0f6 !important;
+  border: 1px solid   #eff0f6 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+}
+
+.main-body.leftmenu.light-leftmenu .first-sidemenu li {
+  color: #1d212f;
+}
+
+.main-body.leftmenu.light-leftmenu .resp-vtabs .resp-tabs-list li {
+  border: 1px solid #5049491a !important;
+  border-top: 0px !important;
+}
+
+.dark-theme.light-leftmenu .resp-tabs-list li.resp-tab-item.active, .dark-theme .resp-tabs-list li.resp-tab-active {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+/*# sourceMappingURL=sidemenu-responsive-tabs.css.map */

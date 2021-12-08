@@ -1,0 +1,91 @@
+/*Color variables*/
+/*gray variables*/
+/*white variables*/
+/*black variables*/
+/*color1*/
+/*color2*/
+/*color3*/
+/*color4*/
+/*color5*/
+@media (min-width: 1025px) {
+  .dark-theme .page {
+    width: 1170px;
+    margin: 0 auto;
+    background: #24243e;
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    min-height: 100vh;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
+  }
+  body.dark-mode {
+    background: #4c5156 !important;
+  }
+  .dark-mode .header.top-header {
+    width: 1170px !important;
+    margin: 0 auto;
+  }
+  .dark-mode .hor-menu.horizontal-main {
+    max-width: 1170px;
+  }
+  .dark-mode .main-content .container, .dark-mode .main-content .container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .dark-mode .main-header > .container, .dark-mode .main-header > .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .dark-mode .app-sidebar {
+    right: auto !important;
+  }
+  .dark-mode .side-header {
+    left: auto !important;
+    right: auto !important;
+    z-index: 1044;
+  }
+  .dark-mode .main-header.side-header {
+    max-width: 1170px;
+  }
+  .dark-mode .nav-tabs .nav-link {
+    padding: 1rem 1.2rem;
+  }
+  .dark-mode.sidenav-toggled .comb-page .horizontal-main {
+    max-width: 1170px;
+  }
+  .dark-mode.app.sidenav-toggled .app-sidebar.comb-sidebar {
+    right: -230px !important;
+  }
+  .dark-mode .horizontalMenu > .horizontalMenu-list > li:last-child > ul.sub-menu {
+    left: 0;
+  }
+  .dark-mode .page-style1 .page-content {
+    z-index: 999;
+  }
+  .dark-mode .app-header {
+    padding-left: 10px !important;
+  }
+  .dark-mode .second-sidemenu {
+    right: auto !important;
+    margin-right: 70px;
+  }
+  .dark-mode.app.sidebar-mini.sidenav-toggled4 .first-sidemenu {
+    left: auto !important;
+  }
+  .dark-mode .header .form-inline .form-control {
+    width: auto;
+  }
+  body.dark-theme {
+    color: #ffffff;
+    background-color: #63636b !important;
+  }
+}
+/*# sourceMappingURL=dark-boxed.css.map */

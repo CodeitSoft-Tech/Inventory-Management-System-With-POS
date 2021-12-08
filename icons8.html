@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+		<meta name="description" content="Spruha -  Admin Panel HTML Dashboard Template">
+		<meta name="author" content="Spruko Technologies Private Limited">
+		<meta name="keywords" content="admin,dashboard,panel,bootstrap admin template,bootstrap dashboard,dashboard,themeforest admin dashboard,themeforest admin,themeforest dashboard,themeforest admin panel,themeforest admin template,themeforest admin dashboard,cool admin,it dashboard,admin design,dash templates,saas dashboard,dmin ui design">
+
+		<!-- Favicon -->
+		<link rel="icon" href="../../assets/img/brand/favicon.ico" type="image/x-icon"/>
+
+		<!-- Title -->
+		<title> Spruha -  Admin Panel HTML Dashboard Template</title>
+
+		<!-- Icons css-->
+		<link href="../../assets/plugins/web-fonts/icons.css" rel="stylesheet" />
+		<link href="../../assets/plugins/web-fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+		<link href="../../assets/plugins/web-fonts/plugin.css" rel="stylesheet" />
+		<link href="../../assets/css/icon-list.css" rel="stylesheet" />
+
+		<!-- Style css-->
+		<link href="../../assets/css/style.css" rel="stylesheet">
+		<link href="../../assets/css/skins.css" rel="stylesheet">
+		<link href="../../assets/css/dark-style.css" rel="stylesheet">
+		<link href="../../assets/css/colors/default.css" rel="stylesheet">
+
+		<!-- Color css-->
+		<link id="theme" rel="stylesheet" type="text/css" media="all" href="../../assets/css/colors/color.css">
+
+		<!-- Select2 css-->
+		<link href="../../assets/plugins/select2/css/select2.min.css" rel="stylesheet">
+
+		<!-- Mutipleselect css-->
+		<link rel="stylesheet" href="../../assets/plugins/multipleselect/multiple-select.css">
+
+		<!-- Sidemenu css-->
+		<link href="../../assets/css/sidemenu/sidemenu.css" rel="stylesheet">
+
+	</head>
+
+	<body class="horizontalmenu">
+
+		<!-- Loader -->
+		<div id="global-loader">
+			<img src="../../assets/img/loader.svg" class="loader-img" alt="Loader">
+		</div>
+		<!-- End Loader -->
+
+		<!-- Page -->
+		<div class="page">
+
+			<!-- Main Header-->
+			<div class="main-header side-header">
+				<div class="container">
+					<div class="main-header-left">
+						<a class="main-header-menu-icon d-lg-none" href="" id="mainNavShow"><span></span></a>
+						<a class="main-logo" href="index.html">
+							<img src="../../assets/img/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+							<img src="../../assets/img/brand/logo-light.png" class="header-brand-img desktop-logo theme-logo" alt="logo">
+						</a>
+					</div>
+					<div class="main-header-center">
+						<div class="responsive-logo">
+							<a href="index.html"><img src="../../assets/img/brand/logo.png" class="mobile-logo" alt="logo"></a>
+							<a href="index.html"><img src="../../assets/img/brand/logo-light.png" class="mobile-logo-dark" alt="logo"></a>
+						</div>
+						<div class="input-group">
+							<div class="input-group-btn search-panel">
+								<select class="form-control select2-no-search">
+									<option label="All categories">
+									</option>
+									<option value="IT Projects">
+										IT Projects
+									</option>
+									<option value="Business Case">
+										Business Case
+									</option>
+									<option value="Microsoft Project">
+										Microsoft Project
+									</option>
+									<option value="Risk Management">
+										Risk Management
+									</option>
+									<option value="Team Building">
+										Team Building
+									</option>
+								</select>
+							</div>
+							<input type="search" class="form-control rounded-0" placeholder="Search for anything...">
+							<button class="btn search-btn"><i class="fe fe-search"></i></button>
+						</div>
+					</div>
+					<div class="main-header-right">
+						<div class="dropdown header-search">
+							<a class="nav-link icon header-search">
+								<i class="fe fe-search"></i>
+							</a>
+							<div class="dropdown-menu">
+								<div class="main-form-search p-2">
+									<div class="input-group">
+										<div class="input-group-btn search-panel">
+											<select class="form-control select2-no-search">
+												<option label="All categories">
+												</option>
+												<option value="IT Projects">
+													IT Projects
+												</option>
+												<option value="Business Case">
+													Business Case
+												</option>
+												<option value="Microsoft Project">
+													Microsoft Project
+												</option>
+												<option value="Risk Management">
+													Risk Management
+												</option>
+												<option value="Team Building">
+													Team Building
+												</option>
+											</select>
+										</div>
+										<input type="search" class="form-control" placeholder="Search for anything...">
+										<button class="btn search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown main-header-notification flag-dropdown">
+							<a class="nav-link icon country-Flag">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#f0f0f0"/><g fill="#0052b4"><path d="M52.92 100.142c-20.109 26.163-35.272 56.318-44.101 89.077h133.178L52.92 100.142zM503.181 189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075 89.076h133.176zM8.819 322.784c8.83 32.758 23.993 62.913 44.101 89.075l89.074-89.075H8.819zM411.858 52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177l89.076-89.075zM100.142 459.079c26.163 20.109 56.318 35.272 89.076 44.102V370.005l-89.076 89.074zM189.217 8.819c-32.758 8.83-62.913 23.993-89.075 44.101l89.075 89.075V8.819zM322.783 503.181c32.758-8.83 62.913-23.993 89.075-44.101l-89.075-89.075v133.176zM370.005 322.784l89.075 89.076c20.108-26.162 35.272-56.318 44.101-89.076H370.005z"/></g><g fill="#d80027"><path d="M509.833 222.609H289.392V2.167A258.556 258.556 0 00256 0c-11.319 0-22.461.744-33.391 2.167v220.441H2.167A258.556 258.556 0 000 256c0 11.319.744 22.461 2.167 33.391h220.441v220.442a258.35 258.35 0 0066.783 0V289.392h220.442A258.533 258.533 0 00512 256c0-11.317-.744-22.461-2.167-33.391z"/><path d="M322.783 322.784L437.019 437.02a256.636 256.636 0 0015.048-16.435l-97.802-97.802h-31.482v.001zM189.217 322.784h-.002L74.98 437.019a256.636 256.636 0 0016.435 15.048l97.802-97.804v-31.479zM189.217 189.219v-.002L74.981 74.98a256.636 256.636 0 00-15.048 16.435l97.803 97.803h31.481zM322.783 189.219L437.02 74.981a256.328 256.328 0 00-16.435-15.047l-97.802 97.803v31.482z"/></g></svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item d-flex ">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/french_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">French</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/germany_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Germany</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/italy_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Italy</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/russia_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Russia</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/spain_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">spain</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="dropdown d-md-flex">
+							<a class="nav-link icon full-screen-link" href="">
+								<i class="fe fe-maximize fullscreen-button fullscreen header-icons"></i>
+								<i class="fe fe-minimize fullscreen-button exit-fullscreen header-icons"></i>
+							</a>
+						</div>
+						<div class="dropdown main-header-notification">
+							<a class="nav-link icon" href="">
+								<i class="fe fe-bell header-icons"></i>
+								<span class="badge badge-danger nav-link-badge">4</span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="header-navheading">
+									<p class="main-notification-text">You have 1 unread notification<span class="badge badge-pill badge-primary ml-3">View all</span></p>
+								</div>
+								<div class="main-notification-list">
+									<div class="media new">
+										<div class="main-img-user online"><img alt="avatar" src="../../assets/img/users/5.jpg"></div>
+										<div class="media-body">
+											<p>Congratulate <strong>Olivia James</strong> for New template start</p><span>Oct 15 12:32pm</span>
+										</div>
+									</div>
+									<div class="media">
+										<div class="main-img-user"><img alt="avatar" src="../../assets/img/users/2.jpg"></div>
+										<div class="media-body">
+											<p><strong>Joshua Gray</strong> New Message Received</p><span>Oct 13 02:56am</span>
+										</div>
+									</div>
+									<div class="media">
+										<div class="main-img-user online"><img alt="avatar" src="../../assets/img/users/3.jpg"></div>
+										<div class="media-body">
+											<p><strong>Elizabeth Lewis</strong> added new schedule realease</p><span>Oct 12 10:40pm</span>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-footer">
+									<a href="#">View All Notifications</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-header-notification">
+							<a class="nav-link icon" href="chat.html">
+								<i class="fe fe-message-square header-icons"></i>
+								<span class="badge badge-success nav-link-badge">6</span>
+							</a>
+						</div>
+						<div class="dropdown main-profile-menu">
+							<a class="d-flex" href="">
+								<span class="main-img-user" ><img alt="avatar" src="../../assets/img/users/1.jpg"></span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="header-navheading">
+									<h6 class="main-notification-title">Sonia Taylor</h6>
+									<p class="main-notification-text">Web Designer</p>
+								</div>
+								<a class="dropdown-item border-top" href="profile.html">
+									<i class="fe fe-user"></i> My Profile
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-edit"></i> Edit Profile
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-settings"></i> Account Settings
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-settings"></i> Support
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-compass"></i> Activity
+								</a>
+								<a class="dropdown-item" href="signin.html">
+									<i class="fe fe-power"></i> Sign Out
+								</a>
+							</div>
+						</div>
+						<div class="dropdown d-md-flex header-settings">
+							<a href="#" class="nav-link icon" data-toggle="sidebar-right" data-target=".sidebar-right">
+								<i class="fe fe-align-right header-icons"></i>
+							</a>
+						</div>
+						<button class="navbar-toggler navresponsive-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+							aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fe fe-more-vertical header-icons navbar-toggler-icon"></i>
+						</button><!-- Navresponsive closed -->
+					</div>
+				</div>
+			</div>
+			<!-- End Main Header-->
+
+			<!-- Mobile-header -->
+			<div class="mobile-main-header">
+				<div class="mb-1 navbar navbar-expand-lg  nav nav-item  navbar-nav-right responsive-navbar navbar-dark  ">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+						<div class="d-flex order-lg-2 ml-auto">
+							<div class="dropdown header-search">
+								<a class="nav-link icon header-search">
+									<i class="fe fe-search"></i>
+								</a>
+								<div class="dropdown-menu">
+									<div class="main-form-search p-2">
+										<div class="input-group">
+											<div class="input-group-btn search-panel">
+												<select class="form-control select2-no-search">
+													<option label="All categories">
+													</option>
+													<option value="IT Projects">
+														IT Projects
+													</option>
+													<option value="Business Case">
+														Business Case
+													</option>
+													<option value="Microsoft Project">
+														Microsoft Project
+													</option>
+													<option value="Risk Management">
+														Risk Management
+													</option>
+													<option value="Team Building">
+														Team Building
+													</option>
+												</select>
+											</div>
+											<input type="search" class="form-control" placeholder="Search for anything...">
+											<button class="btn search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown main-header-notification flag-dropdown">
+							<a class="nav-link icon country-Flag">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="256" fill="#f0f0f0"/><g fill="#0052b4"><path d="M52.92 100.142c-20.109 26.163-35.272 56.318-44.101 89.077h133.178L52.92 100.142zM503.181 189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075 89.076h133.176zM8.819 322.784c8.83 32.758 23.993 62.913 44.101 89.075l89.074-89.075H8.819zM411.858 52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177l89.076-89.075zM100.142 459.079c26.163 20.109 56.318 35.272 89.076 44.102V370.005l-89.076 89.074zM189.217 8.819c-32.758 8.83-62.913 23.993-89.075 44.101l89.075 89.075V8.819zM322.783 503.181c32.758-8.83 62.913-23.993 89.075-44.101l-89.075-89.075v133.176zM370.005 322.784l89.075 89.076c20.108-26.162 35.272-56.318 44.101-89.076H370.005z"/></g><g fill="#d80027"><path d="M509.833 222.609H289.392V2.167A258.556 258.556 0 00256 0c-11.319 0-22.461.744-33.391 2.167v220.441H2.167A258.556 258.556 0 000 256c0 11.319.744 22.461 2.167 33.391h220.441v220.442a258.35 258.35 0 0066.783 0V289.392h220.442A258.533 258.533 0 00512 256c0-11.317-.744-22.461-2.167-33.391z"/><path d="M322.783 322.784L437.019 437.02a256.636 256.636 0 0015.048-16.435l-97.802-97.802h-31.482v.001zM189.217 322.784h-.002L74.98 437.019a256.636 256.636 0 0016.435 15.048l97.802-97.804v-31.479zM189.217 189.219v-.002L74.981 74.98a256.636 256.636 0 00-15.048 16.435l97.803 97.803h31.481zM322.783 189.219L437.02 74.981a256.328 256.328 0 00-16.435-15.047l-97.802 97.803v31.482z"/></g></svg>
+							</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item d-flex ">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/french_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">French</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/germany_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Germany</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/italy_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Italy</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/russia_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">Russia</span>
+									</div>
+								</a>
+								<a href="#" class="dropdown-item d-flex">
+									<span class="avatar  mr-3 align-self-center bg-transparent"><img src="../../assets/img/flags/spain_flag.jpg" alt="img"></span>
+									<div class="d-flex">
+										<span class="mt-2">spain</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="dropdown ">
+							<a class="nav-link icon full-screen-link">
+								<i class="fe fe-maximize fullscreen-button fullscreen header-icons"></i>
+								<i class="fe fe-minimize fullscreen-button exit-fullscreen header-icons"></i>
+							</a>
+						</div>
+						<div class="dropdown main-header-notification">
+							<a class="nav-link icon" href="">
+								<i class="fe fe-bell header-icons"></i>
+								<span class="badge badge-danger nav-link-badge">4</span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="header-navheading">
+									<p class="main-notification-text">You have 1 unread notification<span class="badge badge-pill badge-primary ml-3">View all</span></p>
+								</div>
+								<div class="main-notification-list">
+									<div class="media new">
+										<div class="main-img-user online"><img alt="avatar" src="../../assets/img/users/5.jpg"></div>
+										<div class="media-body">
+											<p>Congratulate <strong>Olivia James</strong> for New template start</p><span>Oct 15 12:32pm</span>
+										</div>
+									</div>
+									<div class="media">
+										<div class="main-img-user"><img alt="avatar" src="../../assets/img/users/2.jpg"></div>
+										<div class="media-body">
+											<p><strong>Joshua Gray</strong> New Message Received</p><span>Oct 13 02:56am</span>
+										</div>
+									</div>
+									<div class="media">
+										<div class="main-img-user online"><img alt="avatar" src="../../assets/img/users/3.jpg"></div>
+										<div class="media-body">
+											<p><strong>Elizabeth Lewis</strong> added new schedule realease</p><span>Oct 12 10:40pm</span>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-footer">
+									<a href="#">View All Notifications</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-header-notification mt-2">
+							<a class="nav-link icon" href="chat.html">
+								<i class="fe fe-message-square header-icons"></i>
+								<span class="badge badge-success nav-link-badge">6</span>
+							</a>
+						</div>
+						<div class="dropdown main-profile-menu">
+							<a class="d-flex" href="#">
+								<span class="main-img-user" ><img alt="avatar" src="../../assets/img/users/1.jpg"></span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="header-navheading">
+									<h6 class="main-notification-title">Sonia Taylor</h6>
+									<p class="main-notification-text">Web Designer</p>
+								</div>
+								<a class="dropdown-item border-top" href="profile.html">
+									<i class="fe fe-user"></i> My Profile
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-edit"></i> Edit Profile
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-settings"></i> Account Settings
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-settings"></i> Support
+								</a>
+								<a class="dropdown-item" href="profile.html">
+									<i class="fe fe-compass"></i> Activity
+								</a>
+								<a class="dropdown-item" href="signin.html">
+									<i class="fe fe-power"></i> Sign Out
+								</a>
+							</div>
+						</div>
+						<div class="dropdown  header-settings">
+							<a href="#" class="nav-link icon" data-toggle="sidebar-right" data-target=".sidebar-right">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-right header-icons"><line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line></svg>
+							</a>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile-header closed -->
+
+			<!-- Horizonatal menu-->
+			<div class="main-navbar hor-menu sticky">
+				<div class="container">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="ti-home"></i>Dashboard</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-wallet"></i>Crypto Currencies</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-dashbaord.html">Dashboard</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-market.html">Marketcap</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-currency-exchange.html">Currency exchange</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-buy-sell.html">Buy &amp; Sell</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-wallet.html">Wallet</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="crypto-transcations.html">Transcations</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-shopping-cart-full"></i>Ecommerce</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-dashboard.html">Dashboard</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-products.html">Products</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-product-details.html">Product Details</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-cart.html">Cart</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-checkout.html">Checkout</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-orders.html">Orders</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="ecommerce-account.html">Account</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-write"></i>Apps</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="widgets.html">Widgets</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="chat.html">Chat</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="cards.html">Cards</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="mail-inbox.html">Mail-Inbox</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="viewmail.html">View-Mail</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="calendar.html">Calendar</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="contacts.html">Contacts</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link with-sub" href="#">Submenu</a>
+									<ul class="nav-sub">
+										<li class="nav-sub-item">
+											<a class="nav-sub-link" href="#">Level-01</a>
+										</li>
+										<li class="nav-sub-item">
+											<a class="nav-sub-link"  href="#">Level-02</a>
+										</li>
+										<li class="nav-sub-item">
+											<a class="nav-sub-link with-sub"  href="#">Level-03</a>
+											<ul class="nav-sub">
+												<li class="nav-sub-item">
+													<a class="nav-sub-link"  href="#">Level-01</a>
+												</li>
+												<li class="nav-sub-item">
+													<a class="nav-sub-link"  href="#">Level-02</a>
+												</li>
+												<li class="nav-sub-item">
+													<a class="nav-sub-link"  href="#">Level-03</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-mega">
+							<a class="nav-link with-sub" href=""><i class="ti-package"></i>Components</a>
+							<div class="nav-sub nav-sub-mega">
+								<div class="container">
+									<div>
+										<ul class="nav">
+											<li><span>Elements</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="alerts.html">Alerts</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="avatar.html">Avatar</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="breadcrumbs.html">Breadcrumbs</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="buttons.html">Buttons</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="badge.html">Badge</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="dropdown.html">Dropdown</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="thumbnails.html">Thumbnails</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="list-group.html">List Group</a>
+											</li>
+										</ul>
+										<ul class="nav pt-2">
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="spinners.html">Spinners</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="media-object.html">Media Object</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="navigation.html">Navigation</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="pagination.html">Pagination</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="popover.html">Popover</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="progress.html">Progress</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="typography.html">Typography</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="tooltip.html">Tooltip</a>
+											</li>
+										</ul>
+										<ul class="nav">
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="toast.html">Toast</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="tags.html">Tags</a>
+											</li>
+											<li class="pt-2"><span>Maps</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="map-mapel.html">Mapel  Maps</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="map-vector.html">Vector Maps</a>
+											</li>
+											<li class="pt-2"><span>Tables</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="table-basic.html">Basic Tables</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="table-data.html">Data Tables</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<ul class="nav">
+											<li><span>Advanced UI</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="accordion.html">Accordion</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="carousel.html">Carousel</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="collapse.html">Collapse</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="modals.html">Modals</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="timeline.html">Timeline</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="darggablecard.html">Darggable-Cards</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="sweet-alert.html">Sweet Alert</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="rating.html">Ratings</a>
+											</li>
+										</ul>
+										<ul class="nav">
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="search.html">Search</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="userlist.html">Userlist</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="blog.html">Blog</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<ul class="nav">
+											<li><span>Chart</span></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-morris.html">Morris Charts</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-flot.html">Flot Charts</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-chartjs.html">ChartJS</a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-spark-peity.html">Sparkline & Peity </a>
+											</li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="chart-echart.html">Echart</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-receipt"></i>Forms</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-elements.html">Form Elements</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-advanced.html">Advanced Forms</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-layouts.html">Form Layouts</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-validation.html">Form Validation</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-wizards.html">Form Wizards</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="form-editor.html">WYSIWYG Editor</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-shield"></i>Utilities</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="background.html">Background</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="border.html">Border</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="display.html">Display</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="flex.html">Flex</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="height.html">Height</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="margin.html">Margin</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="padding.html">Padding</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="position.html">Position</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="width.html">Width</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="extras.html">Extras</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-face-smile"></i>Icons</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons.html">Font Awesome</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons2.html">Material Design Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons3.html">Simple Line Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons4.html">Feather Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons5.html">Ionic Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons6.html">Flag Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons7.html">Pe7 Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons8.html">Themify Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons9.html">Typicons Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons10.html">Weather Icons</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="icons11.html">Material Icons</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link with-sub" href=""><i class="ti-palette"></i>Pages</a>
+							<ul class="nav-sub">
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="profile.html">Profile</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="invoice.html">Invoice</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="pricing.html">Pricing</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link with-sub" href="pricing.html">Alertpages</a>
+									<ul class="nav-sub">
+										<li class="nav-sub-item">
+											<a class="nav-sub-link" href="success-message.html">Success Message</a>
+										</li>
+										<li class="nav-sub-item">
+											<a class="nav-sub-link" href="danger-message.html">Danger Message</a>
+										</li>
+										<li class="nav-sub-item">
+											<a class="nav-sub-link" href="warning-message.html">Warning Message</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="gallery.html">Gallery</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="faq.html">Faqs</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="empty.html">Empty Page</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="signin.html">Sign In</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="signup.html">Sign Up</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="forgot.html">Forgot Password</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="reset.html">Reset Password</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="lockscreen.html">Lockscreen</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="underconstruction.html">UnderConstruction</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="404.html">404 Error</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="500.html">500 Error</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--End  Horizonatal menu-->
+
+			<!-- Main Content-->
+			<div class="main-content pt-0">
+
+				<div class="container">
+					<div class="inner-body">
+
+						<!-- Page Header -->
+						<div class="page-header">
+							<div>
+								<h2 class="main-content-title tx-24 mg-b-5">Themify Icons</h2>
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Icons</a></li>
+									<li class="breadcrumb-item"><a href="#">Themify Icons</a></li>
+								</ol>
+							</div>
+							<div class="d-flex">
+								<div class="justify-content-center">
+									<button type="button" class="btn btn-white btn-icon-text my-2 mr-2">
+									  <i class="fe fe-download mr-2"></i> Import
+									</button>
+									<button type="button" class="btn btn-white btn-icon-text my-2 mr-2">
+									  <i class="fe fe-filter mr-2"></i> Filter
+									</button>
+									<button type="button" class="btn btn-primary my-2 btn-icon-text">
+									  <i class="fe fe-download-cloud mr-2"></i> Download Report
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- End Page Header -->
+
+						<!-- Row-->
+						<div class="row ">
+							<div class="col-md-12">
+								<div class="card custom-card">
+									<div class="card-body">
+										<div class="row row-sm">
+											<div class="col-lg-12 col-sm-12 mb-4">
+												<h3 class="main-content-label">Themify Icons</h3>
+												<p class="mb-2">Simply beautiful open source icons. For more info <a href="https://themify.me/themify-icons" target="_blank">click here</a>.</p>
+												<p><code>&lt;i class="ti-ICON_NAME"&gt;&lt;/i&gt;</code></p>
+											</div>
+											<div class="col-sm-12 col-lg-12">
+												<div class="icons-list-wrap">
+													<ul class="icons-list">
+														<li class="icons-list-item"><i class="ti-arrow-up" data-toggle="tooltip" title="ti-arrow-up"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-right" data-toggle="tooltip" title="ti-arrow-right"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-left" data-toggle="tooltip" title="ti-arrow-left"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-down" data-toggle="tooltip" title="ti-arrow-down"></i></li>
+														<li class="icons-list-item"><i class="ti-arrows-vertical" data-toggle="tooltip" title="ti-arrows-vertical"></i></li>
+														<li class="icons-list-item"><i class="ti-arrows-horizontal" data-toggle="tooltip" title="ti-arrows-horizontal"></i></li>
+														<li class="icons-list-item"><i class="ti-angle-up" data-toggle="tooltip" title="ti-angle-up"></i></li>
+														<li class="icons-list-item"><i class="ti-angle-right" data-toggle="tooltip" title="ti-angle-right"></i></li>
+														<li class="icons-list-item"><i class="ti-angle-left" data-toggle="tooltip" title="ti-angle-left"></i></li>
+														<li class="icons-list-item"><i class="ti-angle-down" data-toggle="tooltip" title="ti-angle-down"></i></li>
+														<li class="icons-list-item"><i class="ti-angle-double-up" data-toggle="tooltip" title="ti-angle-double-up"></i></li>
+														<li class="icons-list-item"><i class="ti-angle-double-right" data-toggle="tooltip" title="ti-angle-double-right"></i></li>
+														<li class="icons-list-item"><i class="ti-angle-double-left" data-toggle="tooltip" title="ti-angle-double-left"></i></li>
+														<li class="icons-list-item"><i class="ti-angle-double-down" data-toggle="tooltip" title="ti-angle-double-down"></i></li>
+														<li class="icons-list-item"><i class="ti-move" data-toggle="tooltip" title="ti-move"></i></li>
+														<li class="icons-list-item"><i class="ti-fullscreen" data-toggle="tooltip" title="ti-fullscreen"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-top-right" data-toggle="tooltip" title="ti-arrow-top-right"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-top-left" data-toggle="tooltip" title="ti-arrow-top-left"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-circle-up" data-toggle="tooltip" title="ti-arrow-circle-up"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-circle-right" data-toggle="tooltip" title="ti-arrow-circle-right"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-circle-left" data-toggle="tooltip" title="ti-arrow-circle-left"></i></li>
+														<li class="icons-list-item"><i class="ti-arrow-circle-down" data-toggle="tooltip" title="ti-arrow-circle-down"></i></li>
+														<li class="icons-list-item"><i class="ti-arrows-corner" data-toggle="tooltip" title="ti-arrows-corner"></i></li>
+														<li class="icons-list-item"><i class="ti-split-v" data-toggle="tooltip" title="ti-split-v"></i></li>
+														<li class="icons-list-item"><i class="ti-split-v-alt" data-toggle="tooltip" title="ti-split-v-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-split-h" data-toggle="tooltip" title="ti-split-h"></i></li>
+														<li class="icons-list-item"><i class="ti-hand-point-up" data-toggle="tooltip" title="ti-hand-point-up"></i></li>
+														<li class="icons-list-item"><i class="ti-hand-point-right" data-toggle="tooltip" title="ti-hand-point-right"></i></li>
+														<li class="icons-list-item"><i class="ti-hand-point-left" data-toggle="tooltip" title="ti-hand-point-left"></i></li>
+														<li class="icons-list-item"><i class="ti-hand-point-down" data-toggle="tooltip" title="ti-hand-point-down"></i></li>
+														<li class="icons-list-item"><i class="ti-back-right" data-toggle="tooltip" title="ti-back-right"></i></li>
+														<li class="icons-list-item"><i class="ti-back-left" data-toggle="tooltip" title="ti-back-left"></i></li>
+														<li class="icons-list-item"><i class="ti-exchange-vertical" data-toggle="tooltip" title="ti-exchange-vertical"></i></li>
+														<li class="icons-list-item"><i class="ti-wand" data-toggle="tooltip" title="ti-wand"></i></li>
+														<li class="icons-list-item"><i class="ti-save" data-toggle="tooltip" title="ti-save"></i></li>
+														<li class="icons-list-item"><i class="ti-save-alt" data-toggle="tooltip" title="ti-save-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-direction" data-toggle="tooltip" title="ti-direction"></i></li>
+														<li class="icons-list-item"><i class="ti-direction-alt" data-toggle="tooltip" title="ti-direction-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-user" data-toggle="tooltip" title="ti-user"></i></li>
+														<li class="icons-list-item"><i class="ti-link" data-toggle="tooltip" title="ti-link"></i></li>
+														<li class="icons-list-item"><i class="ti-unlink" data-toggle="tooltip" title="ti-unlink"></i></li>
+														<li class="icons-list-item"><i class="ti-trash" data-toggle="tooltip" title="ti-trash"></i></li>
+														<li class="icons-list-item"><i class="ti-target" data-toggle="tooltip" title="ti-target"></i></li>
+														<li class="icons-list-item"><i class="ti-tag" data-toggle="tooltip" title="ti-tag"></i></li>
+														<li class="icons-list-item"><i class="ti-desktop" data-toggle="tooltip" title="ti-desktop"></i></li>
+														<li class="icons-list-item"><i class="ti-tablet" data-toggle="tooltip" title="ti-tablet"></i></li>
+														<li class="icons-list-item"><i class="ti-mobile" data-toggle="tooltip" title="ti-mobile"></i></li>
+														<li class="icons-list-item"><i class="ti-email" data-toggle="tooltip" title="ti-email"></i></li>
+														<li class="icons-list-item"><i class="ti-star" data-toggle="tooltip" title="ti-star"></i></li>
+														<li class="icons-list-item"><i class="ti-spray" data-toggle="tooltip" title="ti-spray"></i></li>
+														<li class="icons-list-item"><i class="ti-signal" data-toggle="tooltip" title="ti-signal"></i></li>
+														<li class="icons-list-item"><i class="ti-shopping-cart" data-toggle="tooltip" title="ti-shopping-cart"></i></li>
+														<li class="icons-list-item"><i class="ti-shopping-cart-full" data-toggle="tooltip" title="ti-shopping-cart-full"></i></li>
+														<li class="icons-list-item"><i class="ti-settings" data-toggle="tooltip" title="ti-settings"></i></li>
+														<li class="icons-list-item"><i class="ti-search" data-toggle="tooltip" title="ti-search"></i></li>
+														<li class="icons-list-item"><i class="ti-zoom-in" data-toggle="tooltip" title="ti-zoom-in"></i></li>
+														<li class="icons-list-item"><i class="ti-zoom-out" data-toggle="tooltip" title="ti-zoom-out"></i></li>
+														<li class="icons-list-item"><i class="ti-cut" data-toggle="tooltip" title="ti-cut"></i></li>
+														<li class="icons-list-item"><i class="ti-ruler" data-toggle="tooltip" title="ti-ruler"></i></li>
+														<li class="icons-list-item"><i class="ti-ruler-alt-2" data-toggle="tooltip" title="ti-ruler-alt-2"></i></li>
+														<li class="icons-list-item"><i class="ti-ruler-pencil" data-toggle="tooltip" title="ti-ruler-pencil"></i></li>
+														<li class="icons-list-item"><i class="ti-ruler-alt" data-toggle="tooltip" title="ti-ruler-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-bookmark" data-toggle="tooltip" title="ti-bookmark"></i></li>
+														<li class="icons-list-item"><i class="ti-bookmark-alt" data-toggle="tooltip" title="ti-bookmark-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-reload" data-toggle="tooltip" title="ti-reload"></i></li>
+														<li class="icons-list-item"><i class="ti-plus" data-toggle="tooltip" title="ti-plus"></i></li>
+														<li class="icons-list-item"><i class="ti-minus" data-toggle="tooltip" title="ti-minus"></i></li>
+														<li class="icons-list-item"><i class="ti-close" data-toggle="tooltip" title="ti-close"></i></li>
+														<li class="icons-list-item"><i class="ti-pin" data-toggle="tooltip" title="ti-pin"></i></li>
+														<li class="icons-list-item"><i class="ti-pencil" data-toggle="tooltip" title="ti-pencil"></i></li>
+														<li class="icons-list-item"><i class="ti-pencil-alt" data-toggle="tooltip" title="ti-pencil-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-paint-roller" data-toggle="tooltip" title="ti-paint-roller"></i></li>
+														<li class="icons-list-item"><i class="ti-paint-bucket" data-toggle="tooltip" title="ti-paint-bucket"></i></li>
+														<li class="icons-list-item"><i class="ti-na" data-toggle="tooltip" title="ti-na"></i></li>
+														<li class="icons-list-item"><i class="ti-medall" data-toggle="tooltip" title="ti-medall"></i></li>
+														<li class="icons-list-item"><i class="ti-medall-alt" data-toggle="tooltip" title="ti-medall-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-marker" data-toggle="tooltip" title="ti-marker"></i></li>
+														<li class="icons-list-item"><i class="ti-marker-alt" data-toggle="tooltip" title="ti-marker-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-lock" data-toggle="tooltip" title="ti-lock"></i></li>
+														<li class="icons-list-item"><i class="ti-unlock" data-toggle="tooltip" title="ti-unlock"></i></li>
+														<li class="icons-list-item"><i class="ti-location-arrow" data-toggle="tooltip" title="ti-location-arrow"></i></li>
+														<li class="icons-list-item"><i class="ti-layout" data-toggle="tooltip" title="ti-layout"></i></li>
+														<li class="icons-list-item"><i class="ti-layers" data-toggle="tooltip" title="ti-layers"></i></li>
+														<li class="icons-list-item"><i class="ti-layers-alt" data-toggle="tooltip" title="ti-layers-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-key" data-toggle="tooltip" title="ti-key"></i></li>
+														<li class="icons-list-item"><i class="ti-image" data-toggle="tooltip" title="ti-image"></i></li>
+														<li class="icons-list-item"><i class="ti-heart" data-toggle="tooltip" title="ti-heart"></i></li>
+														<li class="icons-list-item"><i class="ti-heart-broken" data-toggle="tooltip" title="ti-heart-broken"></i></li>
+														<li class="icons-list-item"><i class="ti-hand-stop" data-toggle="tooltip" title="ti-hand-stop"></i></li>
+														<li class="icons-list-item"><i class="ti-hand-open" data-toggle="tooltip" title="ti-hand-open"></i></li>
+														<li class="icons-list-item"><i class="ti-hand-drag" data-toggle="tooltip" title="ti-hand-drag"></i></li>
+														<li class="icons-list-item"><i class="ti-flag" data-toggle="tooltip" title="ti-flag"></i></li>
+														<li class="icons-list-item"><i class="ti-flag-alt" data-toggle="tooltip" title="ti-flag-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-flag-alt-2" data-toggle="tooltip" title="ti-flag-alt-2"></i></li>
+														<li class="icons-list-item"><i class="ti-eye" data-toggle="tooltip" title="ti-eye"></i></li>
+														<li class="icons-list-item"><i class="ti-import" data-toggle="tooltip" title="ti-import"></i></li>
+														<li class="icons-list-item"><i class="ti-export" data-toggle="tooltip" title="ti-export"></i></li>
+														<li class="icons-list-item"><i class="ti-cup" data-toggle="tooltip" title="ti-cup"></i></li>
+														<li class="icons-list-item"><i class="ti-crown" data-toggle="tooltip" title="ti-crown"></i></li>
+														<li class="icons-list-item"><i class="ti-comments" data-toggle="tooltip" title="ti-comments"></i></li>
+														<li class="icons-list-item"><i class="ti-comment" data-toggle="tooltip" title="ti-comment"></i></li>
+														<li class="icons-list-item"><i class="ti-comment-alt" data-toggle="tooltip" title="ti-comment-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-thought" data-toggle="tooltip" title="ti-thought"></i></li>
+														<li class="icons-list-item"><i class="ti-clip" data-toggle="tooltip" title="ti-clip"></i></li>
+														<li class="icons-list-item"><i class="ti-check" data-toggle="tooltip" title="ti-check"></i></li>
+														<li class="icons-list-item"><i class="ti-check-box" data-toggle="tooltip" title="ti-check-box"></i></li>
+														<li class="icons-list-item"><i class="ti-camera" data-toggle="tooltip" title="ti-camera"></i></li>
+														<li class="icons-list-item"><i class="ti-announcement" data-toggle="tooltip" title="ti-announcement"></i></li>
+														<li class="icons-list-item"><i class="ti-brush" data-toggle="tooltip" title="ti-brush"></i></li>
+														<li class="icons-list-item"><i class="ti-brush-alt" data-toggle="tooltip" title="ti-brush-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-palette" data-toggle="tooltip" title="ti-palette"></i></li>
+														<li class="icons-list-item"><i class="ti-briefcase" data-toggle="tooltip" title="ti-briefcase"></i></li>
+														<li class="icons-list-item"><i class="ti-bolt" data-toggle="tooltip" title="ti-bolt"></i></li>
+														<li class="icons-list-item"><i class="ti-bolt-alt" data-toggle="tooltip" title="ti-bolt-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-blackboard" data-toggle="tooltip" title="ti-blackboard"></i></li>
+														<li class="icons-list-item"><i class="ti-bag" data-toggle="tooltip" title="ti-bag"></i></li>
+														<li class="icons-list-item"><i class="ti-world" data-toggle="tooltip" title="ti-world"></i></li>
+														<li class="icons-list-item"><i class="ti-wheelchair" data-toggle="tooltip" title="ti-wheelchair"></i></li>
+														<li class="icons-list-item"><i class="ti-car" data-toggle="tooltip" title="ti-car"></i></li>
+														<li class="icons-list-item"><i class="ti-truck" data-toggle="tooltip" title="ti-truck"></i></li>
+														<li class="icons-list-item"><i class="ti-timer" data-toggle="tooltip" title="ti-timer"></i></li>
+														<li class="icons-list-item"><i class="ti-ticket" data-toggle="tooltip" title="ti-ticket"></i></li>
+														<li class="icons-list-item"><i class="ti-thumb-up" data-toggle="tooltip" title="ti-thumb-up"></i></li>
+														<li class="icons-list-item"><i class="ti-thumb-down" data-toggle="tooltip" title="ti-thumb-down"></i></li>
+														<li class="icons-list-item"><i class="ti-stats-up" data-toggle="tooltip" title="ti-stats-up"></i></li>
+														<li class="icons-list-item"><i class="ti-stats-down" data-toggle="tooltip" title="ti-stats-down"></i></li>
+														<li class="icons-list-item"><i class="ti-shine" data-toggle="tooltip" title="ti-shine"></i></li>
+														<li class="icons-list-item"><i class="ti-shift-right" data-toggle="tooltip" title="ti-shift-right"></i></li>
+														<li class="icons-list-item"><i class="ti-shift-left" data-toggle="tooltip" title="ti-shift-left"></i></li>
+														<li class="icons-list-item"><i class="ti-shift-right-alt" data-toggle="tooltip" title="ti-shift-right-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-shift-left-alt" data-toggle="tooltip" title="ti-shift-left-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-shield" data-toggle="tooltip" title="ti-shield"></i></li>
+														<li class="icons-list-item"><i class="ti-notepad" data-toggle="tooltip" title="ti-notepad"></i></li>
+														<li class="icons-list-item"><i class="ti-server" data-toggle="tooltip" title="ti-server"></i></li>
+														<li class="icons-list-item"><i class="ti-pulse" data-toggle="tooltip" title="ti-pulse"></i></li>
+														<li class="icons-list-item"><i class="ti-printer" data-toggle="tooltip" title="ti-printer"></i></li>
+														<li class="icons-list-item"><i class="ti-power-off" data-toggle="tooltip" title="ti-power-off"></i></li>
+														<li class="icons-list-item"><i class="ti-plug" data-toggle="tooltip" title="ti-plug"></i></li>
+														<li class="icons-list-item"><i class="ti-pie-chart" data-toggle="tooltip" title="ti-pie-chart"></i></li>
+														<li class="icons-list-item"><i class="ti-panel" data-toggle="tooltip" title="ti-panel"></i></li>
+														<li class="icons-list-item"><i class="ti-package" data-toggle="tooltip" title="ti-package"></i></li>
+														<li class="icons-list-item"><i class="ti-music" data-toggle="tooltip" title="ti-music"></i></li>
+														<li class="icons-list-item"><i class="ti-music-alt" data-toggle="tooltip" title="ti-music-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-mouse" data-toggle="tooltip" title="ti-mouse"></i></li>
+														<li class="icons-list-item"><i class="ti-mouse-alt" data-toggle="tooltip" title="ti-mouse-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-money" data-toggle="tooltip" title="ti-money"></i></li>
+														<li class="icons-list-item"><i class="ti-microphone" data-toggle="tooltip" title="ti-microphone"></i></li>
+														<li class="icons-list-item"><i class="ti-menu" data-toggle="tooltip" title="ti-menu"></i></li>
+														<li class="icons-list-item"><i class="ti-menu-alt" data-toggle="tooltip" title="ti-menu-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-map" data-toggle="tooltip" title="ti-map"></i></li>
+														<li class="icons-list-item"><i class="ti-map-alt" data-toggle="tooltip" title="ti-map-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-location-pin" data-toggle="tooltip" title="ti-location-pin"></i></li>
+														<li class="icons-list-item"><i class="ti-light-bulb" data-toggle="tooltip" title="ti-light-bulb"></i></li>
+														<li class="icons-list-item"><i class="ti-info" data-toggle="tooltip" title="ti-info"></i></li>
+														<li class="icons-list-item"><i class="ti-infinite" data-toggle="tooltip" title="ti-infinite"></i></li>
+														<li class="icons-list-item"><i class="ti-id-badge" data-toggle="tooltip" title="ti-id-badge"></i></li>
+														<li class="icons-list-item"><i class="ti-hummer" data-toggle="tooltip" title="ti-hummer"></i></li>
+														<li class="icons-list-item"><i class="ti-home" data-toggle="tooltip" title="ti-home"></i></li>
+														<li class="icons-list-item"><i class="ti-help" data-toggle="tooltip" title="ti-help"></i></li>
+														<li class="icons-list-item"><i class="ti-headphone" data-toggle="tooltip" title="ti-headphone"></i></li>
+														<li class="icons-list-item"><i class="ti-harddrives" data-toggle="tooltip" title="ti-harddrives"></i></li>
+														<li class="icons-list-item"><i class="ti-harddrive" data-toggle="tooltip" title="ti-harddrive"></i></li>
+														<li class="icons-list-item"><i class="ti-gift" data-toggle="tooltip" title="ti-gift"></i></li>
+														<li class="icons-list-item"><i class="ti-game" data-toggle="tooltip" title="ti-game"></i></li>
+														<li class="icons-list-item"><i class="ti-filter" data-toggle="tooltip" title="ti-filter"></i></li>
+														<li class="icons-list-item"><i class="ti-files" data-toggle="tooltip" title="ti-files"></i></li>
+														<li class="icons-list-item"><i class="ti-file" data-toggle="tooltip" title="ti-file"></i></li>
+														<li class="icons-list-item"><i class="ti-zip" data-toggle="tooltip" title="ti-zip"></i></li>
+														<li class="icons-list-item"><i class="ti-folder" data-toggle="tooltip" title="ti-folder"></i></li>
+														<li class="icons-list-item"><i class="ti-envelope" data-toggle="tooltip" title="ti-envelope"></i></li>
+														<li class="icons-list-item"><i class="ti-dashboard" data-toggle="tooltip" title="ti-dashboard"></i></li>
+														<li class="icons-list-item"><i class="ti-cloud" data-toggle="tooltip" title="ti-cloud"></i></li>
+														<li class="icons-list-item"><i class="ti-cloud-up" data-toggle="tooltip" title="ti-cloud-up"></i></li>
+														<li class="icons-list-item"><i class="ti-cloud-down" data-toggle="tooltip" title="ti-cloud-down"></i></li>
+														<li class="icons-list-item"><i class="ti-clipboard" data-toggle="tooltip" title="ti-clipboard"></i></li>
+														<li class="icons-list-item"><i class="ti-calendar" data-toggle="tooltip" title="ti-calendar"></i></li>
+														<li class="icons-list-item"><i class="ti-book" data-toggle="tooltip" title="ti-book"></i></li>
+														<li class="icons-list-item"><i class="ti-bell" data-toggle="tooltip" title="ti-bell"></i></li>
+														<li class="icons-list-item"><i class="ti-basketball" data-toggle="tooltip" title="ti-basketball"></i></li>
+														<li class="icons-list-item"><i class="ti-bar-chart" data-toggle="tooltip" title="ti-bar-chart"></i></li>
+														<li class="icons-list-item"><i class="ti-bar-chart-alt" data-toggle="tooltip" title="ti-bar-chart-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-archive" data-toggle="tooltip" title="ti-archive"></i></li>
+														<li class="icons-list-item"><i class="ti-anchor" data-toggle="tooltip" title="ti-anchor"></i></li>
+														<li class="icons-list-item"><i class="ti-alert" data-toggle="tooltip" title="ti-alert"></i></li>
+														<li class="icons-list-item"><i class="ti-alarm-clock" data-toggle="tooltip" title="ti-alarm-clock"></i></li>
+														<li class="icons-list-item"><i class="ti-agenda" data-toggle="tooltip" title="ti-agenda"></i></li>
+														<li class="icons-list-item"><i class="ti-write" data-toggle="tooltip" title="ti-write"></i></li>
+														<li class="icons-list-item"><i class="ti-wallet" data-toggle="tooltip" title="ti-wallet"></i></li>
+														<li class="icons-list-item"><i class="ti-video-clapper" data-toggle="tooltip" title="ti-video-clapper"></i></li>
+														<li class="icons-list-item"><i class="ti-video-camera" data-toggle="tooltip" title="ti-video-camera"></i></li>
+														<li class="icons-list-item"><i class="ti-vector" data-toggle="tooltip" title="ti-vector"></i></li>
+														<li class="icons-list-item"><i class="ti-support" data-toggle="tooltip" title="ti-support"></i></li>
+														<li class="icons-list-item"><i class="ti-stamp" data-toggle="tooltip" title="ti-stamp"></i></li>
+														<li class="icons-list-item"><i class="ti-slice" data-toggle="tooltip" title="ti-slice"></i></li>
+														<li class="icons-list-item"><i class="ti-shortcode" data-toggle="tooltip" title="ti-shortcode"></i></li>
+														<li class="icons-list-item"><i class="ti-receipt" data-toggle="tooltip" title="ti-receipt"></i></li>
+														<li class="icons-list-item"><i class="ti-pin2" data-toggle="tooltip" title="ti-pin2"></i></li>
+														<li class="icons-list-item"><i class="ti-pin-alt" data-toggle="tooltip" title="ti-pin-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-pencil-alt2" data-toggle="tooltip" title="ti-pencil-alt2"></i></li>
+														<li class="icons-list-item"><i class="ti-eraser" data-toggle="tooltip" title="ti-eraser"></i></li>
+														<li class="icons-list-item"><i class="ti-more" data-toggle="tooltip" title="ti-more"></i></li>
+														<li class="icons-list-item"><i class="ti-more-alt" data-toggle="tooltip" title="ti-more-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-microphone-alt" data-toggle="tooltip" title="ti-microphone-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-magnet" data-toggle="tooltip" title="ti-magnet"></i></li>
+														<li class="icons-list-item"><i class="ti-line-double" data-toggle="tooltip" title="ti-line-double"></i></li>
+														<li class="icons-list-item"><i class="ti-line-dotted" data-toggle="tooltip" title="ti-line-dotted"></i></li>
+														<li class="icons-list-item"><i class="ti-line-dashed" data-toggle="tooltip" title="ti-line-dashed"></i></li>
+														<li class="icons-list-item"><i class="ti-ink-pen" data-toggle="tooltip" title="ti-ink-pen"></i></li>
+														<li class="icons-list-item"><i class="ti-info-alt" data-toggle="tooltip" title="ti-info-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-help-alt" data-toggle="tooltip" title="ti-help-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-headphone-alt" data-toggle="tooltip" title="ti-headphone-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-gallery" data-toggle="tooltip" title="ti-gallery"></i></li>
+														<li class="icons-list-item"><i class="ti-face-smile" data-toggle="tooltip" title="ti-face-smile"></i></li>
+														<li class="icons-list-item"><i class="ti-face-sad" data-toggle="tooltip" title="ti-face-sad"></i></li>
+														<li class="icons-list-item"><i class="ti-credit-card" data-toggle="tooltip" title="ti-credit-card"></i></li>
+														<li class="icons-list-item"><i class="ti-comments-smiley" data-toggle="tooltip" title="ti-comments-smiley"></i></li>
+														<li class="icons-list-item"><i class="ti-time" data-toggle="tooltip" title="ti-time"></i></li>
+														<li class="icons-list-item"><i class="ti-share" data-toggle="tooltip" title="ti-share"></i></li>
+														<li class="icons-list-item"><i class="ti-share-alt" data-toggle="tooltip" title="ti-share-alt"></i></li>
+														<li class="icons-list-item"><i class="ti-rocket" data-toggle="tooltip" title="ti-rocket"></i></li>
+														<li class="icons-list-item"><i class="ti-new-window" data-toggle="tooltip" title="ti-new-window"></i></li>
+														<li class="icons-list-item"><i class="ti-rss" data-toggle="tooltip" title="ti-rss"></i></li>
+														<li class="icons-list-item"><i class="ti-rss-alt" data-toggle="tooltip" title="ti-rss-alt"></i></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Row-->
+				</div><!-- end app-content-->
+			</div>
+			<!-- End Main Content-->
+
+			<!-- Main Footer-->
+			<div class="main-footer text-center">
+				<div class="container">
+					<div class="row row-sm">
+						<div class="col-md-12">
+							<span>Copyright © 2021 <a href="#">Spruha</a>. Designed by <a href="https://www.spruko.com/">Spruko</a> All rights reserved.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End Footer-->
+
+			<!-- Sidebar -->
+			<div class="sidebar sidebar-right sidebar-animate">
+				<div class="sidebar-icon">
+					<a href="#" class="text-right float-right text-dark fs-20" data-toggle="sidebar-right" data-target=".sidebar-right"><i class="fe fe-x"></i></a>
+				</div>
+				<div class="sidebar-body">
+					<h5>Todo</h5>
+					<div class="d-flex p-3">
+						<label class="ckbox"><input checked  type="checkbox"><span>Hangout With friends</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input type="checkbox"><span>Prepare for presentation</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input checked type="checkbox"><span>System Updated</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input type="checkbox"><span>Do something more</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input  type="checkbox"><span>System Updated</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top">
+						<label class="ckbox"><input  type="checkbox"><span>Find an Idea</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<div class="d-flex p-3 border-top mb-0">
+						<label class="ckbox"><input  type="checkbox"><span>Project review</span></label>
+						<span class="ml-auto">
+							<i class="fe fe-edit-2 text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
+							<i class="fe fe-trash-2 text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
+						</span>
+					</div>
+					<h5>Overview</h5>
+					<div class="p-4">
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>Founder &amp; CEO</span> <span>24</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-xs wd-20p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>UX Designer</span> <span>1</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" class="progress-bar progress-bar-xs bg-secondary wd-15p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>Recruitment</span> <span>87</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="45" class="progress-bar progress-bar-xs bg-success wd-45p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>Software Engineer</span> <span>32</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar progress-bar-xs bg-info wd-25p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+						<div class="main-traffic-detail-item">
+							<div>
+								<span>Project Manager</span> <span>32</span>
+							</div>
+							<div class="progress">
+								<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar progress-bar-xs bg-danger wd-25p" role="progressbar"></div>
+							</div><!-- progress -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Sidebar -->
+
+		</div>
+		<!-- End Page -->
+
+		<!-- Back-to-top -->
+		<a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
+
+		<!-- Jquery js-->
+		<script src="../../assets/plugins/jquery/jquery.min.js"></script>
+
+		<!-- Bootstrap js-->
+		<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+		<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Jquery-Ui js-->
+		<script src="../../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+
+		<!-- Select2 js-->
+		<script src="../../assets/plugins/select2/js/select2.min.js"></script>
+
+		<!-- MutipleSelect js-->
+		<script src="../../assets/plugins/multipleselect/multiple-select.js"></script>
+		<script src="../../assets/plugins/multipleselect/multi-select.js"></script>
+
+		<!-- Perfect-scrollbar js -->
+		<script src="../../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+		<!-- Sidebar js -->
+		<script src="../../assets/plugins/sidebar/sidebar.js"></script>
+
+		<!-- Sticky js -->
+		<script src="../../assets/js/sticky.js"></script>
+
+		<!-- Custom js -->
+		<script src="../../assets/js/custom.js"></script>
+
+	</body>
+</html>
