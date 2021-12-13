@@ -81,11 +81,11 @@
 
 	<body class="horizontalmenu" onload="myFunction()" onload="CredFunction()">
 
-		<!-- Loader 
+		<!-- Loader --> 
 		<div id="global-loader">
 			<img src="assets/img/loader.svg" class="loader-img" alt="Loader">
 		</div>
-		 End Loader -->
+		 <!-- End Loader -->
 
 		<!-- Page -->
 		<div class="page">

@@ -3,7 +3,7 @@
 
 	session_start();
 	include('includes/db_conn.php');
-	
+
 
 	$discount   = $_POST['discount'];
 	//$payment  = $_POST['payment'];
@@ -26,7 +26,7 @@
 	// Reduce the product's qty purchased from qty on the product table
 	// Select Order no
 
-	mysqli_query($db, "INSERT INTO tbl_sales(admin_id, discount, amount_due, total, date_added, modeofpayment, cash_tendered, cash_change) 
+	mysqli_query($db, "INSERT INTO tbl_cred_sales(admin_id, discount, amount_due, total, date_added, modeofpayment, cash_tendered, cash_change) 
 	VALUES('$admin_id','$discount','$amount_due','$total', NOW(),'cash','$tendered','$change')")or die(mysqli_error($db));
 	
 	// Get Last Sale ID	
@@ -41,11 +41,11 @@
  			$qty   = $row['qty'];
 			$price = $row['price'];
 		
-			mysqli_query($db, "INSERT INTO tbl_sales_details(prod_id, qty, price, sales_id)VALUES('$pid','$qty','$price', '$sales_id')")or die(mysqli_error($db));
+			mysqli_query($db, "INSERT INTO tbl_sales_detail_cred(prod_id, qty, price, sales_id)VALUES('$pid','$qty','$price', '$sales_id')")or die(mysqli_error($db));
 			mysqli_query($db, "UPDATE product_tbl SET prod_qty = prod_qty - '$qty' where prod_id = '$pid'") or die(mysqli_error($db)); 
 		}
 			
-		mysqli_query($db,"INSERT INTO tbl_payment(admin_id, payment, payment_date, payment_for, due ,status, sales_id) 
+		mysqli_query($db,"INSERT INTO tbl_cred_payment(admin_id, payment, payment_date, payment_for, due ,status, sales_id) 
 						VALUES('$admin_id','$total',NOW(), NOW(), '$total','paid','$sales_id')")or die(mysqli_error($db));
 		echo "<script>document.location ='receipt-creditor.php'</script>";  	
 		
