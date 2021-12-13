@@ -79,7 +79,7 @@
 
 	</head>
 
-	<body class="horizontalmenu" onload="myFunction()">
+	<body class="horizontalmenu" onload="myFunction()" onload="CredFunction()">
 
 		<!-- Loader 
 		<div id="global-loader">

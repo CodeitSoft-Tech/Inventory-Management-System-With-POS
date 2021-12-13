@@ -55,6 +55,7 @@
 
 
 		<script type="text/javascript" src="autosum.js"></script>
+		<script type="text/javascript" src="autosum-cred.js"></script>
 		<!-- Jquery js-->
 		<script src="assets/plugins/jquery/jquery.min.js"></script>
 
