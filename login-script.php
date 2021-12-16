@@ -51,7 +51,20 @@
             $remarks = "has logged into the system at";  
             mysqli_query($db,"INSERT INTO history_log(admin_id, action, log_date) VALUES('$admin_id','$remarks', NOW())")or die(mysqli_error($db));
 
-            echo "<script>alert('Login successful. Welcome!')</script>";
+            echo "<script>
+
+
+                $('#swal-success').click(function () {
+                  swal(
+                    {
+                      title: 'Login successful!',
+                      type: 'success',
+                      confirmButtonColor: '#57a94f'
+                    }
+                  )
+                });
+
+            </script>";
             echo "<script>document.location='pos.php'</script>";
 
           } 

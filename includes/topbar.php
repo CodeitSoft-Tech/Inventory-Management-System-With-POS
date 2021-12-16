@@ -86,6 +86,9 @@
 								<li class="nav-sub-item">
 									<a class="nav-sub-link" href="employees-log.php">Employees Log</a>
 								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="credit-log.php">Credit Log</a>
+								</li>
 							</ul>
 						</li>
 

@@ -84,6 +84,16 @@
 								</div>
 							</div>
 
+							<div class="col-md">
+								<div class="card bg-gray-800 tx-white custom-card">
+									<div class="card-body">
+										<h5 class="main-content-label tx-dark tx-medium mg-b-10">Credit Report</h5>
+										<hr>
+										<a class="card-link btn btn-white" href="creditor-report.php">Click here</a>
+									</div>
+								</div>
+							</div>
+
 							
 						</div>
 								

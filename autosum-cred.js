@@ -6,16 +6,14 @@ function startCalc()
 
 function calc()
 {
-  one = document.autoSumForm.total.value;
-  two = document.autoSumForm.discount.value; 
+  one = document.autoSumCred.total.value;
+  two = document.autoSumCred.discount.value; 
   three = (one * 1) - (two * 1);
-  document.autoSumForm.amount_due.value = three.toFixed(2);
+  document.autoSumCred.amount_due.value = three.toFixed(2);
 
-  four = document.autoSumForm.tendered.value; 
+  four = document.autoSumCred.tendered.value; 
   five=(one * 1) - (four * 1);
-  document.autoSumForm.change.value = five.toFixed(2);
-
-  
+  document.autoSumCred.cash_change.value = five.toFixed(2);
 }
 
 function stopCalc()
@@ -25,6 +23,6 @@ function stopCalc()
 
 function CredFunction()
 {
-	one = document.autoSumForm.total.value;
+	one = document.autoSumCred.total.value;
 	document.autoSumForm.amount_due.value = one;
 }

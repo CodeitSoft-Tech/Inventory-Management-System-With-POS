@@ -24,6 +24,7 @@
        $tendered = $row['cash_tendered'];
        $change   = $row['cash_change'];
        $date     = $row['date_added'];
+       $pymt_mode = $row['modeofpayment'];
 
        $query1 = mysqli_query($db, "select * from tbl_payment where sales_id='$sales_id'")or die(mysqli_error($db));
        $row1 = mysqli_fetch_array($query1);
@@ -150,6 +151,12 @@ $pdf->SetFont('courier','B',10);
 $pdf->Cell(1,5,'',0,0,'L',true); //100
 $pdf->Cell(48,5,'TOTAL',0,0,'L',true);
 $pdf->Cell(16,5,number_format($grand-$discount,2),0,1,'L',true);
+
+$pdf->SetX(7);
+$pdf->SetFont('courier','B',8);
+$pdf->Cell(1,5,'',0,0,'L',true); //100
+$pdf->Cell(48,5,'PAYMENT MODE',0,0,'L',true);
+$pdf->Cell(16,5,$pymt_mode,0,1,'L',true);
 
 
 $pdf->Cell(20,5,'',0,1,'');

@@ -281,30 +281,7 @@
 										<dl class="dlist-align">
 											<dt class="">Total:</dt>
 											<dd class="text-right ml-auto">
-											<input id="total" name="total" class="form-control col-md-6 pull-right" type="text" value="<?php  echo $grand;
-
-												//if($size == "Full")
-												//{
-													//echo $grand; 
-												//}
-												//elseif($size == "Half")
-												//{
-													//echo $half_grand;
-												//}	
-												//elseif($size == "Quarter")
-												//{
-													//echo $qtr_grand;
-												
-												//}
-												//else{
-
-													//echo $grand + $half_grand + $qtr_grand;
-												//}
-
-
-
-
-										   ?>" onFocus="startCalc();" onBlur="stopCalc();" name="" readonly></dd>
+											<input id="total" name="total" class="form-control col-md-6 pull-right" type="text" value="<?php echo $grand; ?>" onFocus="startCalc();" onBlur="stopCalc();" name="" readonly></dd>
 										</dl>
 										<dl class="dlist-align">
 											<dt>Discount:</dt>
@@ -326,23 +303,26 @@
 											<dd class="text-right  ml-auto">
 											<input class="form-control col-md-6 pull-right" type="text" id="change" name="change" required></dd>
 										</dl>
+
+										  <dl class="dlist-align">
+											<dt>Payment Mode:</dt>
+											<dd class="text-right ml-auto">
+										   <select name="paymt_type" class="form-control col-md-4 select2 pull-right" required>
+											<option value="">Select</option>
+											<option value="Cash">Cash</option>
+											<option value="Momo">Momo</option>
+											</select></dd>
+										  </dl>
+
 										<div class="step-footer">
 										<button type="submit" name="cash" data-direction="next" class="step-btn btn btn-primary btn-block">Checkout</button>
 										</div>
-									</form>
-								
+									</form>		
 								</div>
 							</div>
 						</div>
 						<!-- End Row -->
-
-
-
-
-									</div>
-								
-							
-						
+					</div>						
 				</div>
 			</div>
 			<!-- End Main Content-->

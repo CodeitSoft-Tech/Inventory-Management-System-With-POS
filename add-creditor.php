@@ -13,8 +13,12 @@
 		$total_amt 	 = mysqli_real_escape_string($db, $_POST['total_amt']);
 		$amt_paid 	 = mysqli_real_escape_string($db, $_POST['amt_paid']);
 		$pymt_period = mysqli_real_escape_string($db, $_POST['payment_period']);
+		$date_taken  = mysqli_real_escape_string($db, $_POST['date_taken']);
 
-		$insert_cred = "INSERT INTO tbl_creditors(cust_name, location, phone_number, qty, total_amount,	amount_paid, payment_period)VALUES('$cust_name', '$cust_loc', '$cust_no', '$cust_qty', '$total_amt', '$amt_paid', '$pymt_period')";
+		$status = "Not Paid";
+
+
+		$insert_cred = "INSERT INTO tbl_creditors(cust_name, location, phone_number, qty, total_amount,	amount_paid, payment_period, date_taken, cred_status)VALUES('$cust_name', '$cust_loc', '$cust_no', '$cust_qty', '$total_amt', '$amt_paid', '$pymt_period', NOW(), '$status')";
 		$run_cred   = mysqli_query($db, $insert_cred);
 
 		if($run_cred)

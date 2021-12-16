@@ -85,6 +85,8 @@
 														<option value="2 weeks">2 weeks</option>
 													</select>
 												   </div>
+
+
 													
 													<div class="form-group col-md-9">
 													<button type="submit" name="btn-cred" class="btn ripple btn-main-primary">
@@ -108,19 +110,19 @@
 									 List of Creditors
 									</div>
 									<div class="card-body">
-										<table class="table" id="example2">
+										<table class="table table-bordered border-t0 key-buttons text-nowrap w-100" id="example2">
 												<thead>
 													<tr>
 														<th class="wd-20p">No.</th>
 														<th class="wd-20p">Customer Name</th>
-														<th class="wd-15p">Location</th>	
-														<th class="wd-20p">Phone Number</th>
 														<th class="wd-20p">Quantity of goods</th>
 														<th class="wd-20p">Total Amount</th>
 														<th class="wd-20p">Amount Paid</th>
 														<th class="wd-20p">Amount Left</th>
+														<th class="wd-20p">Credit Status</th>
 														<th class="wd-15p">Payment Period</th>
 														<th class="wd-15p">End Date</th>
+														<th class="wd-15p">Date taken</th>
 														<th class="wd-15p">Action</th>
 													</tr>
 												</thead>
@@ -133,14 +135,15 @@
 
 														while($row_cred = mysqli_fetch_array($run_cred))
 														{
-															$cred_id 		= $row_cred['creditor_id'];
+															$cred_id 		  = $row_cred['creditor_id'];
 															$cust_name 		= $row_cred['cust_name'];
 															$cust_loc  		= $row_cred['location'];
-															$cust_no		= $row_cred['phone_number'];
-															$cust_qty		= $row_cred['qty'];
-															$total_amt      = $row_cred['total_amount'];
-															$amt_paid       = $row_cred['amount_paid'];
+															$cust_no		  = $row_cred['phone_number'];
+															$cust_qty		  = $row_cred['qty'];
+															$total_amt    = $row_cred['total_amount'];
+															$amt_paid     = $row_cred['amount_paid'];
 															$pymt_period 	= $row_cred['payment_period'];
+															$date_taken 	= $row_cred['date_taken'];
 															
 
 															$amount_left = $total_amt - $amt_paid;
@@ -152,23 +155,36 @@
 													<tr>
 														<td><?php echo $i;         ?></td>
 														<td><?php echo $cust_name; ?></td>
-														<td><?php echo $cust_loc;  ?></td>
-														<td><?php echo $cust_no;   ?></td>
 														<td><?php echo $cust_qty;  ?></td>
 														<td>₵<?php echo number_format($total_amt, 2);   ?></td>
 														<td>₵<?php echo number_format($amt_paid, 2);    ?></td>
 														<td>₵<?php echo number_format($amount_left, 2); ?></td>
+														<td>
+														 <?php 
+
+														  if($total_amt == $amount_left)
+														  {
+														  	echo "<span class='badge badge-success'>Paid</span>";
+														  } 
+														  else
+														  {
+														  	echo "<span class='badge badge-danger'>Not-Paid</span>";
+														  }
+
+													   ?></td>
 														<td><?php echo $pymt_period; ?></td>
 														<td>
 														<?php      
 
 															if($pymt_period == '2 weeks')
-                        									{
-                          										$date = date('M d, Y',strtotime('+2 week'));
-                          										echo $date;
-                        									}
+                        			{
+                          					$date = date('M d, Y',strtotime('+2 week'));
+                          					echo $date;
+                        			}
+                        			
 														?>
 														</td>
+														<td><?php echo date("M d, Y",strtotime($date_taken));  ?></td>
 														<td>
 														<a class="btn ripple btn-primary" data-target="#update<?php echo $cred_id; ?>" data-toggle="modal" href="#update<?php echo $cred_id; ?>"><i class="fa fa-eye"></i></a>
 														<a class="btn ripple btn-danger" data-target="#delete<?php echo $cred_id; ?>" data-toggle="modal" href="#delete<?php echo $cred_id; ?>"><i class="fa fa-trash"></i></a>

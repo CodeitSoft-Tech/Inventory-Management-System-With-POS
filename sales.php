@@ -148,6 +148,7 @@
 						              <th>Qty</th>
 						            	<th>Price</th>
 						              <th>Total Amount</th>
+						  						<th>Payment Mode</th>
 						              <th>Date Paid</th>
 						              <th colspan="9">OverAll Total</th>     						  
 											</tr>
@@ -161,7 +162,7 @@
 							                 $gs = 0;
 
 
-							                 $query = mysqli_query($db,"select * from tbl_sales natural join tbl_sales_details natural join product_tbl where date(date_added)>='$start' and date(date_added)<='$end' and modeofpayment='cash' order by date_added")or die(mysqli_error($db));
+							                 $query = mysqli_query($db,"select * from tbl_sales natural join tbl_sales_details natural join product_tbl where date(date_added)>='$start' and date(date_added)<='$end' order by date_added")or die(mysqli_error($db));
 							                           		  
 							                  while($row = mysqli_fetch_array($query))
 							                  {
@@ -170,7 +171,8 @@
 							                     $grand      = $grand + $total;
 							                     $sum2       += $row['discount'];
 							                     $prod_price = $row['prod_price'];
-							                     $gs  += $row['price'];
+							                     $gs  			 += $row['price'];
+							                     $pymt_mode   = $row['modeofpayment'];
 
 							                     $all_grand = $grand - $sum2;
 
@@ -188,6 +190,7 @@
 								                <td style="text-align:right">
 								                   ₵<?php echo number_format($row['qty'] * $row['price'],2);?>
 								                </td>
+								                <td><?php echo $pymt_mode; ?></td>
 								                <td><?php echo date("M d, Y",strtotime($row['date_added']));?></td> 
 								                <td colspan="9"></td>   
 							    		                      

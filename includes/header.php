@@ -52,7 +52,6 @@
 		<!-- Internal Datetimepicker-slider css -->
 		<link href="assets/plugins/amazeui-datetimepicker/css/amazeui.datetimepicker.css" rel="stylesheet">
 
-
 		<!-- Internal Daterangepicker css-->
 		<link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
@@ -65,6 +64,8 @@
 		<!-- Internal TelephoneInput css-->
 		<link rel="stylesheet" href="assets/plugins/telephoneinput/telephoneinput.css">
 
+		<!-- Internal Sweet-Alert css-->
+		<link href="assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
 
 		<!-- Internal Specturm-color picker css-->
 		<link href="assets/plugins/spectrum-colorpicker/spectrum.css" rel="stylesheet">
@@ -79,7 +80,7 @@
 
 	</head>
 
-	<body class="horizontalmenu" onload="myFunction()" onload="CredFunction()">
+	<body class="horizontalmenu" onload="myFunction()">
 
 		<!-- Loader --> 
 		<div id="global-loader">
@@ -108,6 +109,97 @@
 					</div>
 
 					<div class="main-header-right">
+						<div class="dropdown main-header-notification">
+							<a class="nav-link icon" href="">
+								<i class="fe fe-shield-off header-icons"></i>
+								<span class="badge badge-danger nav-link-badge">
+								<?php 
+								$sel = "SELECT * FROM product_tbl WHERE expiry_date >= DATE(now()) AND
+								    expiry_date <= DATE_ADD(DATE(now()), INTERVAL 60 DAY)";
+								$run = mysqli_query($db, $sel);
+								$count = mysqli_num_rows($run);
+								echo $count;
+
+							      	 	                      
+			                      ?>  
+								</span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="main-notification-list">
+									<div class="media new">
+										<div class="online"></div>
+										<div class="media-body">
+											<h6>Products Closer to Expiry</h6>
+											<hr>
+											  <?php
+											 // SELECT * FROM table WHERE date = DATE_ADD(CURDATE(), INTERVAL 8 DAY)
+						                        $sel = "SELECT * FROM product_tbl WHERE expiry_date >= DATE(now()) AND
+													    expiry_date <= DATE_ADD(DATE(now()), INTERVAL 60 DAY)";
+												$run = mysqli_query($db, $sel);
+
+											     while($row_latest = mysqli_fetch_array($run))
+											     {
+											       $prod_name = $row_latest['prod_name'];
+											         
+												    echo "<p><i style='color:red' class='fe fe-shield-off text-red'></i> $prod_name</p>";
+										             
+											 	}    
+
+						                      ?>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<!-- Product Closer to expiry -->
+
+						<!-- Product Expired -->
+						<div class="dropdown main-header-notification">
+						  <a class="nav-link icon" href="">
+							<i class="fe fe-shield-off header-icons"></i>
+							<span class="badge badge-danger nav-link-badge">
+							 <?php 
+								$sel = "SELECT * FROM product_tbl WHERE expiry_date < NOW() OR expiry_date = NOW()";
+								$run = mysqli_query($db, $sel);
+								$count = mysqli_num_rows($run);
+								echo $count;
+							      	 	                      
+			                 ?>  
+							</span>
+							</a>
+							<div class="dropdown-menu">
+								<div class="main-notification-list">
+									<div class="media new">
+										<div class="online"></div>
+										<div class="media-body">
+											<h6>Expired Products</h6>
+											<hr>
+											  <?php
+											 // SELECT * FROM table WHERE date = DATE_ADD(CURDATE(), INTERVAL 8 DAY)
+						                        $sel = "SELECT * FROM product_tbl WHERE expiry_date < NOW() OR expiry_date = NOW()";
+												$run = mysqli_query($db, $sel);
+
+											     while($row_latest = mysqli_fetch_array($run))
+											     {
+											       $prod_name = $row_latest['prod_name'];
+											         
+												    echo "<p><i style='color:red' class='fe fe-shield-off text-red'></i> $prod_name</p>";
+										             
+											 	}    
+
+						                      ?>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<!-- Product Expired End -->
+
+						<!-- Out of stock product -->
 						<div class="dropdown main-header-notification">
 							<a class="nav-link icon" href="">
 								<i class="fe fe-bell header-icons"></i>

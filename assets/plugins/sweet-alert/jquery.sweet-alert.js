@@ -19,8 +19,7 @@ $(function(e) {
 	$('#swal-success').click(function () {
 		swal(
 			{
-				title: 'Well done!',
-				text: 'You clicked the button!',
+				title: 'Login Sucessfull!',
 				type: 'success',
 				confirmButtonColor: '#57a94f'
 			}

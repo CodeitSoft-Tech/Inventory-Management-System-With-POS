@@ -13,7 +13,7 @@
        $row_ad    = mysqli_fetch_array($run_ad);
        $fullname  = $row_ad['fullname'];
 
-       $query = mysqli_query($db, "select * from tbl_sales order by sales_id desc LIMIT 0,1")or die(mysqli_error($db));          
+       $query = mysqli_query($db, "select * from tbl_cred_sales order by sales_id desc LIMIT 0,1")or die(mysqli_error($db));          
        $row = mysqli_fetch_array($query);
                                              
        $sales_id = $row['sales_id']; 
@@ -25,7 +25,7 @@
        $change   = $row['cash_change'];
        $date     = $row['date_added'];
 
-       $query1 = mysqli_query($db, "select * from tbl_payment where sales_id='$sales_id'")or die(mysqli_error($db));
+       $query1 = mysqli_query($db, "select * from tbl_cred_payment where sales_id='$sales_id'")or die(mysqli_error($db));
        $row1 = mysqli_fetch_array($query1);
 
 
@@ -97,7 +97,7 @@ $pdf->Cell(34,5,'ITEMS',0,0,'L', true); //100
 $pdf->Cell(15,5,'QTY',0,0,' L', true);
 $pdf->Cell(16,5,'TOTAL',0,1,'L', true);
 
-$query = mysqli_query($db,"select * from tbl_sales_details natural join product_tbl where sales_id ='$sid'")or die(mysqli_error($db));
+$query = mysqli_query($db,"select * from tbl_sales_details_cred natural join product_tbl where sales_id ='$sid'")or die(mysqli_error($db));
 $grand = 0;
                                               
 while($row = mysqli_fetch_array($query))

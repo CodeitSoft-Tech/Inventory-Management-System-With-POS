@@ -35,6 +35,9 @@
 		<link href="assets/css/dark-style.css" rel="stylesheet">
 		<link href="assets/css/colors/default.css" rel="stylesheet">
 
+		<!-- Internal Sweet-Alert css-->
+		<link href="assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
+
 		<!-- Select2 css -->
 		<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet">
 
@@ -113,7 +116,7 @@
 													<input class="form-control" name="admin_pass" type="password">
 												</div>
 
-												<button type="submit" name="admin_login" class="btn ripple btn-main-primary btn-block">Sign In</button>
+												<button type="submit" id='swal-success' name="admin_login" class="btn ripple btn-main-primary btn-block">Sign In</button>
 											</form>
 											<div class="text-left mt-5 ml-0">
 												<div class="mb-1"><a href="reset.php">Forgot password?</a></div>
@@ -131,6 +134,23 @@
 		</div>
 		<!-- End Page -->
 
+
+		          <!-- <div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card custom-card text-center">
+										<div class="card-body">
+											<div>
+												<h6 class="main-content-label mb-1">Success alert</h6>
+												<p class="text-muted card-sub-title">A Success Message</p>
+											</div>
+											<div class="btn ripple btn-primary" id='swal-success'>
+												Click me !
+											</div>
+										</div>
+									</div>
+								</div> -->
+
+
+
 		<!-- Jquery js-->
 		<script src="assets/plugins/jquery/jquery.min.js"></script>
 
@@ -138,6 +158,9 @@
 		<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
 		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 		
+		<!-- Internal Sweet-Alert js-->
+		<script src="assets/plugins/sweet-alert/sweetalert.min.js"></script>
+		<script src="assets/plugins/sweet-alert/jquery.sweet-alert.js"></script>
 		
     <!-- Select2 js-->
 		<script src="assets/plugins/select2/js/select2.min.js"></script>

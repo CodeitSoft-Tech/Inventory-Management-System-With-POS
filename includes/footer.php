@@ -55,9 +55,13 @@
 
 
 		<script type="text/javascript" src="autosum.js"></script>
-		<script type="text/javascript" src="autosum-cred.js"></script>
 		<!-- Jquery js-->
 		<script src="assets/plugins/jquery/jquery.min.js"></script>
+
+		<!-- Internal Sweet-Alert js-->
+		<script src="assets/plugins/sweet-alert/jquery.sweet-alert.js"></script>
+		<script src="assets/plugins/sweet-alert/sweetalert.min.js"></script>
+		
 
 		<!-- Bootstrap js-->
 		<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
@@ -117,6 +121,7 @@
 		<!-- Internal Jquery-Ui js-->
 		<script src="assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
 
+		
 		<!-- Internal Jquery.maskedinput js-->
 		<script src="assets/plugins/jquery.maskedinput/jquery.maskedinput.js"></script>
 

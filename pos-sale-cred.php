@@ -13,7 +13,7 @@
 	$total      = $amount_due - $discount;
 	$tendered   = $_POST['tendered'];
 	$change     = $_POST['change'];
-
+	$paymt_type = mysqli_real_escape_string($db, $_POST['paymt_type']);
 
 	$username  = $_SESSION['admin_username'];
 	$get_admin = "SELECT * FROM admin_tbl WHERE admin_username = '$username'";
@@ -27,7 +27,7 @@
 	// Select Order no
 
 	mysqli_query($db, "INSERT INTO tbl_cred_sales(admin_id, discount, amount_due, total, date_added, modeofpayment, cash_tendered, cash_change) 
-	VALUES('$admin_id','$discount','$amount_due','$total', NOW(),'cash','$tendered','$change')")or die(mysqli_error($db));
+	VALUES('$admin_id','$discount','$amount_due','$total', NOW(), '$paymt_type', '$tendered', '$change')")or die(mysqli_error($db));
 	
 	// Get Last Sale ID	
 	$sales_id = mysqli_insert_id($db);
@@ -41,9 +41,16 @@
  			$qty   = $row['qty'];
 			$price = $row['price'];
 		
-			mysqli_query($db, "INSERT INTO tbl_sales_detail_cred(prod_id, qty, price, sales_id)VALUES('$pid','$qty','$price', '$sales_id')")or die(mysqli_error($db));
+			mysqli_query($db, "INSERT INTO tbl_sales_details_cred(prod_id, qty, price, sales_id)VALUES('$pid','$qty','$price', '$sales_id')")or die(mysqli_error($db));
 			mysqli_query($db, "UPDATE product_tbl SET prod_qty = prod_qty - '$qty' where prod_id = '$pid'") or die(mysqli_error($db)); 
 		}
+
+	$qry     = mysqli_query($db,"select * from product_tbl where prod_id = '$pid'")or die(mysqli_error());
+    $row_q   = mysqli_fetch_array($qry);
+	$product = $row_q['prod_name'];
+	$remarks = "has credited $qty quantities of $product amounted GHC $amount_due";  
+	
+	mysqli_query($db, "INSERT INTO credit_log(admin_id, action, log_date)VALUES('$admin_id','$remarks', NOW())")or die(mysqli_error($db));
 			
 		mysqli_query($db,"INSERT INTO tbl_cred_payment(admin_id, payment, payment_date, payment_for, due ,status, sales_id) 
 						VALUES('$admin_id','$total',NOW(), NOW(), '$total','paid','$sales_id')")or die(mysqli_error($db));
