@@ -326,6 +326,17 @@
 											<dd class="text-right  ml-auto">
 											<input class="form-control col-md-6 pull-right" type="text" id="change" name="change" required></dd>
 										</dl>
+										 
+										 <dl class="dlist-align">
+											<dt>Payment Mode:</dt>
+											<dd class="text-right ml-auto">
+										    <select name="paymt_type" class="form-control col-md-4 select2 pull-right" required>
+											<option value="">Select</option>
+											<option value="Cash">Cash</option>
+											<option value="Momo">Momo</option>
+											</select></dd>
+										  </dl>
+
 										<div class="step-footer">
 										<button type="submit" name="cash" data-direction="next" class="step-btn btn btn-primary btn-block">Checkout</button>
 										</div>

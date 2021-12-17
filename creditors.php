@@ -92,7 +92,7 @@
 										<a class="card-link btn btn-white" href="creditor-report.php">Click here</a>
 									</div>
 								</div>
-							</div>
+							</div>-->
 
 							
 						</div>

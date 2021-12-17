@@ -10,19 +10,19 @@
 	$row 		= mysqli_fetch_array($run_query);
 	$price 		= $row['prod_price'];
 
-	$sel_temp 	= "SELECT * FROM temp_trans WHERE prod_id = '$prod_name'";
+	$sel_temp 	= "SELECT * FROM temp_trans_cred WHERE prod_id = '$prod_name'";
 	$run_temp	= mysqli_query($db, $sel_temp);
 	$count		= mysqli_num_rows($run_temp);
 	//$total      = $price * $qty;
 
 	if($count > 0)
 	{
-		$update_temp = "UPDATE temp_trans SET qty = qty + '$qty', price = '$price' WHERE prod_id = '$prod_name'";
+		$update_temp = "UPDATE temp_trans_cred SET qty = qty + '$qty', price = '$price' WHERE prod_id = '$prod_name'";
 		$run_update  = mysqli_query($db, $update_temp);
 	}
 	else
 	{
-		$insert_temp = "INSERT INTO temp_trans(prod_id, price, qty)VALUES('$prod_name', '$price', '$qty')";
+		$insert_temp = "INSERT INTO temp_trans_cred(prod_id, price, qty)VALUES('$prod_name', '$price', '$qty')";
 		$run_insert  = mysqli_query($db, $insert_temp);
 	}
 

@@ -69,6 +69,12 @@
 								<li class="nav-sub-item">
 									<a class="nav-sub-link" href="creditors.php">Creditors</a>
 								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="saleby-employee.php">Sales By Employee</a>
+								</li>
+								<li class="nav-sub-item">
+									<a class="nav-sub-link" href="creditby-employee.php">Credits By Employee</a>
+								</li>
 							</ul>
 						</li>
 
